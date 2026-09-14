@@ -79,4 +79,5 @@ jobs:
           path: |
             inherited-tests.tap
             dist/startup-report.json
+            dist/startup-diagnostics/*
           if-no-files-found: ignore

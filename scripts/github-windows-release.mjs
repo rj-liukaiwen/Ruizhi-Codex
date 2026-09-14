@@ -58,10 +58,11 @@ if (step === 'prepare') {
   assert.equal(report.version, version); assert.equal(report.sourceSha, sha);
   const startup = JSON.parse(readFileSync('dist/startup-report.json', 'utf8').replace(/^\uFEFF/, ''));
   assert.equal(startup.startup, 'passed');
+  assert.equal(startup.archiveSha256, report.artifacts.find(a => a.name === `ruizhi-windows-${version}.zip`).sha256);
   const body = `锐捷 Codex ${version} · Windows x64\n\n基于用户提供的 0910-d5fbc05 固定快照构建。\n\n- Ruizhi-Setup-${version}.exe：未签名 Windows 安装程序。\n- ruizhi-windows-${version}.zip：便携目录包。\n- 包含 SHA256SUMS、更新清单及构建记录。\n- 构建、Windows 打包回归、文件摘要与应用启动检查通过；真实账号登录、远端插件与模型服务未做授权验收。\n- 原快照历史测试：${report.inheritedTests.passed} 通过、${report.inheritedTests.failed} 失败（包含缺失的旧覆盖层路径及旧配置断言）。不代表全量源码回归通过，原始报告见 Actions diagnostics。\n- 非 OpenAI 官方发行版。第三方软件保留各自许可。\n\n源码提交：${sha}\n`;
   const release = await api('/releases', 'POST', { tag_name: `v${version}`, target_commitish: sha, name: `锐捷 Codex v${version} · Windows`, body, draft: true });
   const url = release.upload_url.replace(/\{.*$/, ''); assert.equal(new URL(url).hostname, 'uploads.github.com');
-  const names = [...report.artifacts.map(a => a.name), 'build-report.json', 'SHA256SUMS.txt'];
+  const names = [...report.artifacts.map(a => a.name), 'build-report.json', 'startup-report.json', 'SHA256SUMS.txt'];
   assert.deepEqual(readdirSync(dir).sort(), [...names].sort());
   for (const name of names) {
     const file = path.join(dir, name); const bytes = statSync(file).size;

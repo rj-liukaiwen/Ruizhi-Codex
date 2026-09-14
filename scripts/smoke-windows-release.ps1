@@ -1,11 +1,13 @@
 $ErrorActionPreference = 'Stop'
 if ($env:GITHUB_ACTIONS -ne 'true' -or $env:RUNNER_ENVIRONMENT -ne 'github-hosted') { throw 'Startup check is restricted to a disposable GitHub-hosted runner' }
 $config = Get-Content -LiteralPath 'config/rj-codex.json' -Raw | ConvertFrom-Json
-$appRoot = [IO.Path]::GetFullPath((Join-Path (Get-Location) '.work/windows-app-out'))
-$exe = Join-Path $appRoot $config.windows.appExeName
-if (-not (Test-Path -LiteralPath $exe)) { throw 'Packaged executable is missing' }
 $fixture = Join-Path $env:RUNNER_TEMP ('ruizhi-startup-' + [guid]::NewGuid().ToString('N'))
 New-Item -ItemType Directory -Path $fixture | Out-Null
+$archive = "dist/github-release/ruizhi-windows-$($config.version).zip"
+$appRoot = Join-Path $fixture 'app'
+Expand-Archive -LiteralPath $archive -DestinationPath $appRoot
+$exe = Join-Path $appRoot $config.windows.appExeName
+if (-not (Test-Path -LiteralPath $exe)) { throw 'Packaged executable is missing' }
 $env:GH_TOKEN = $null
 $env:RUIZHI_HOME = Join-Path $fixture 'home'
 $env:CODEX_HOME = $env:RUIZHI_HOME
@@ -23,7 +25,10 @@ try {
     } catch {}
   }
   if (-not $ready) { throw 'Packaged app did not expose a browser page within the startup deadline' }
-  [ordered]@{ version=$config.version; startup='passed'; check='Native packaged app exposed a browser page'; accountAuthorization='not tested' } | ConvertTo-Json | Set-Content -LiteralPath 'dist/startup-report.json' -Encoding utf8
+  [ordered]@{ version=$config.version; startup='passed'; check='App extracted from release ZIP exposed a browser page'; archiveSha256=(Get-FileHash -LiteralPath $archive -Algorithm SHA256).Hash.ToLowerInvariant(); accountAuthorization='not tested' } | ConvertTo-Json | Set-Content -LiteralPath 'dist/startup-report.json' -Encoding utf8
+  Copy-Item -LiteralPath 'dist/startup-report.json' -Destination 'dist/github-release/startup-report.json'
 } finally {
+  New-Item -ItemType Directory -Path 'dist/startup-diagnostics' -Force | Out-Null
+  Get-ChildItem -LiteralPath $fixture -Filter '*.log' | Copy-Item -Destination 'dist/startup-diagnostics'
   Get-CimInstance Win32_Process | Where-Object { $_.ExecutablePath -and $_.ExecutablePath.StartsWith($appRoot + '\', [StringComparison]::OrdinalIgnoreCase) } | ForEach-Object { Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue }
 }
