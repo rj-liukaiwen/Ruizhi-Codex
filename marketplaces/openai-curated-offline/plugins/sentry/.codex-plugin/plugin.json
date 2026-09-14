@@ -1,0 +1,37 @@
+{
+  "name": "sentry",
+  "version": "0.1.2",
+  "description": "Inspect recent issues and events in Sentry from Codex.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "sentry"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Sentry",
+    "shortDescription": "Inspect recent Sentry issues and events",
+    "longDescription": "Inspect recent issues and events in Sentry from Codex.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Inspect recent Sentry issues and summarize the top production errors"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/sentry.png",
+    "logo": "./assets/sentry.png",
+    "screenshots": []
+  }
+}

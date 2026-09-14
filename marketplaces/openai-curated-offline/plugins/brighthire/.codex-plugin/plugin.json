@@ -1,0 +1,40 @@
+{
+  "name": "brighthire",
+  "version": "0.1.1",
+  "description": "Connect Codex to BrightHire interview intelligence data through the BrightHire app connector.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "brighthire"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "BrightHire",
+    "shortDescription": "Search and analyze BrightHire interviews, candidates, calls, and hiring data.",
+    "longDescription": "Connect Codex to BrightHire interview intelligence data through the BrightHire app connector.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Use BrightHire to find recent interviews for this candidate.",
+      "Search BrightHire for calls related to this role.",
+      "Summarize the BrightHire interview context for this hiring decision."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

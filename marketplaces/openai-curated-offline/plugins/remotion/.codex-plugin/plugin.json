@@ -1,0 +1,39 @@
+{
+  "name": "remotion",
+  "version": "1.0.3",
+  "description": "Remotion video creation skills — best practices, animations, audio, captions, 3D, and more for building programmatic videos with React.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "remotion"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Remotion",
+    "shortDescription": "Create motion graphics from prompts",
+    "longDescription": "Remotion video creation skills — best practices, animations, audio, captions, 3D, and more for building programmatic videos with React.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Create an animated chart with 5 bars",
+      "Make an animated call-to-action subscribe button for our YouTube channel",
+      "Use Remotion to add captions and audio to a video composition."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "help-scout",
+  "version": "1.0.3",
+  "description": "Connect to sync Help Scout mailboxes and conversations for use in Codex.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "help-scout"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Help Scout",
+    "shortDescription": "Connect to sync Help Scout mailboxes and conversations for use in Codex.",
+    "longDescription": "Connect to sync Help Scout mailboxes and conversations for use in Codex.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Summarize the Help Scout thread and next actions"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

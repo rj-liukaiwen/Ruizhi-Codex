@@ -1,0 +1,38 @@
+{
+  "name": "channel99",
+  "version": "1.0.3",
+  "description": "Channel99 real time go to market intelligence connects Codex directly to Channel99’s performance marketin...",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "channel99"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Channel99",
+    "shortDescription": "Channel99 real time go to market intelligence connects Codex directly to Channel99’s performance marketin...",
+    "longDescription": "Channel99 real time go to market intelligence connects Codex directly to Channel99’s performance marketin...",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Summarize campaign performance from Channel99"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

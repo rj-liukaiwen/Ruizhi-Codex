@@ -1,0 +1,41 @@
+{
+  "name": "catalyst-by-zoho",
+  "version": "1.0.1",
+  "description": "Extend Codex with Catalyst by Zoho's capabilities.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "catalyst-by-zoho"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Catalyst by Zoho",
+    "shortDescription": "Use Catalyst by Zoho capabilities in Codex.",
+    "longDescription": "Extend Codex with Catalyst by Zoho's capabilities.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "MCP",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Help me work with Catalyst by Zoho.",
+      "Show me available Catalyst by Zoho capabilities.",
+      "Guide my Catalyst project setup."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/catalyst_logo.svg",
+    "logo": "./assets/catalyst_logo.svg",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

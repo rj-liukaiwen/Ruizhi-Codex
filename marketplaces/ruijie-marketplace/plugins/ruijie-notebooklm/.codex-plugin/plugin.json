@@ -1,0 +1,41 @@
+{
+  "name": "ruijie-notebooklm",
+  "version": "2026.05.08.1",
+  "description": "NotebookLM PDF 读书助手插件。",
+  "author": {
+    "name": "Ruijie",
+    "url": "https://uniapi.ruijie.com.cn/"
+  },
+  "homepage": "https://uniapi.ruijie.com.cn/",
+  "repository": "https://uniapi.ruijie.com.cn/",
+  "license": "Proprietary",
+  "keywords": [
+    "ruijie",
+    "notebooklm",
+    "books",
+    "pdf"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "读书助手",
+    "shortDescription": "上传 PDF 并生成读书产出",
+    "longDescription": "选择 PDF 书籍后创建单书 NotebookLM 笔记本，生成中文 Markdown 摘要、快速阅读产出或 Mermaid 图表。",
+    "developerName": "Ruijie",
+    "category": "锐捷",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://uniapi.ruijie.com.cn/",
+    "privacyPolicyURL": "https://uniapi.ruijie.com.cn/",
+    "termsOfServiceURL": "https://uniapi.ruijie.com.cn/",
+    "defaultPrompt": [
+      "上传一本 PDF 并生成读书总结",
+      "用读书助手生成书籍思维导图"
+    ],
+    "brandColor": "#255A8C",
+    "composerIcon": "./assets/ruijie-notebooklm.svg",
+    "logo": "./assets/ruijie-notebooklm.svg",
+    "screenshots": []
+  }
+}

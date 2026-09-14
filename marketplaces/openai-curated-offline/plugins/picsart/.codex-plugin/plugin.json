@@ -1,0 +1,40 @@
+{
+  "name": "picsart",
+  "version": "1.0.3",
+  "description": "Generate videos, images, and audio",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "picsart"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Picsart",
+    "shortDescription": "Generate videos, images, and audio",
+    "longDescription": "Generate videos, images, and audio",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Turn this product photo into a 10-second vertical video ad for Reels and TikTok.",
+      "Generate a cinematic 15-second product teaser from a text prompt.",
+      "Generate 5 on-brand product shots and pick the best aspect ratio for Instagram."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

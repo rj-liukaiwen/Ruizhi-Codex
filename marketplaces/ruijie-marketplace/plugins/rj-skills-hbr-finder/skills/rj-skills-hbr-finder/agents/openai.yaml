@@ -1,0 +1,10 @@
+interface:
+  display_name: "锐捷-哈佛商业评论"
+  short_description: "v2026.05.07.01；分页检索哈佛商业评论中文版文章并输出 Markdown"
+  icon_small: "./assets/rj-skills-hbr-finder.png"
+  icon_large: "./assets/rj-skills-hbr-finder.png"
+  brand_color: "#A51E22"
+  default_prompt: "使用 $rj-skills-hbr-finder 检索哈佛商业评论文章。"
+
+policy:
+  allow_implicit_invocation: true

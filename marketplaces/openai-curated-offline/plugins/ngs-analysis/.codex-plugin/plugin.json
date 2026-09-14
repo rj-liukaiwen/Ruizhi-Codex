@@ -1,0 +1,38 @@
+{
+  "name": "ngs-analysis",
+  "version": "1.0.3",
+  "description": "Guided NGS intake, local execution, and public-pipeline routing for BCL, FASTQ, DNA variant, RNA-seq, single-cell, epigenomics, amplicon, and metagenomics analyses, with deeper decision skills for high-risk assay branches.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "ngs-analysis"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Life Sciences NGS Analysis",
+    "shortDescription": "Guided NGS routing and local execution for sequencing analysis",
+    "longDescription": "Guided NGS intake, local execution, and public-pipeline routing for BCL, FASTQ, DNA variant, RNA-seq, single-cell, epigenomics, amplicon, and metagenomics analyses, with deeper decision skills for high-risk assay branches.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Guide me through the minimum required NGS analysis questions, inspect available BCL/FASTQ files or count matrices, choose the right public pipeline or deeper assay-specific skill, check whether required tools already exist, and execute supported local workflows with pre-execution validation and artifact capture."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/app-icon.png",
+    "logo": "./assets/app-icon.png",
+    "screenshots": []
+  }
+}

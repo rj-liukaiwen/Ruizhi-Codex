@@ -1,0 +1,38 @@
+{
+  "name": "carta-crm",
+  "version": "1.0.3",
+  "description": "Carta CRM helps investment teams stay on top of deal flow by keeping deals, companies, and relationships in...",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "carta-crm"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Carta CRM",
+    "shortDescription": "Carta CRM helps investment teams stay on top of deal flow by keeping deals, companies, and relationships in...",
+    "longDescription": "Carta CRM helps investment teams stay on top of deal flow by keeping deals, companies, and relationships in...",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Find the latest relationship context in Carta CRM"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

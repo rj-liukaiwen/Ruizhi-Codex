@@ -1,0 +1,39 @@
+{
+  "name": "glean",
+  "version": "1.0.0",
+  "description": "Access enterprise knowledge with Glean's remote MCP server.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "glean"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Glean",
+    "shortDescription": "Access enterprise knowledge with Glean",
+    "longDescription": "Access enterprise knowledge with Glean's remote MCP server.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Search company knowledge with Glean.",
+      "Find an employee or team in Glean.",
+      "Fetch a Glean document by URL."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

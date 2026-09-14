@@ -1,0 +1,38 @@
+{
+  "name": "jam",
+  "version": "1.0.2",
+  "description": "Screen record with context",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "jam"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Jam",
+    "shortDescription": "Screen record with context",
+    "longDescription": "Screen record with context",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "What does this bug report show"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/app-icon.png",
+    "logo": "./assets/app-icon.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

@@ -1,0 +1,45 @@
+{
+  "name": "zoom",
+  "version": "1.0.2",
+  "description": "Connect Codex to Zoom meeting context and build Zoom apps, bots, API integrations, SDK workflows, webhooks, and automations.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "zoom"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Zoom",
+    "shortDescription": "Use Zoom meeting context and build Zoom integrations.",
+    "longDescription": "Connect Codex to Zoom meeting context and build Zoom apps, bots, API integrations, SDK workflows, webhooks, and automations.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Search my recent Zoom meetings for the discussion about pricing.",
+      "Run /plan-zoom-product for a Zoom integration idea."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/app-icon.svg",
+    "logo": "./assets/app-icon.svg",
+    "screenshots": [
+      "./assets/screenshot-1.png",
+      "./assets/screenshot-2.png",
+      "./assets/screenshot-3.png",
+      "./assets/screenshot-4.png"
+    ]
+  },
+  "apps": "./.app.json"
+}

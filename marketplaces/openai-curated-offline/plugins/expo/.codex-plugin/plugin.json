@@ -1,0 +1,38 @@
+{
+  "name": "expo",
+  "version": "1.0.2",
+  "description": "Official Expo skills for building, deploying, upgrading, and debugging Expo and React Native apps.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "expo"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Expo",
+    "shortDescription": "Build, deploy, upgrade, and debug Expo and React Native apps",
+    "longDescription": "Official Expo skills for building, deploying, upgrading, and debugging Expo and React Native apps.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Use Expo when building, deploying, upgrading, debugging, or wiring Codex app Run actions for Expo and React Native apps."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/expo.png",
+    "logo": "./assets/expo.png",
+    "screenshots": []
+  }
+}

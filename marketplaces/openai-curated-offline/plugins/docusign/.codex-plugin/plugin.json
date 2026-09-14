@@ -1,0 +1,40 @@
+{
+  "name": "docusign",
+  "version": "1.0.3",
+  "description": "Automate contract creation and insights",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "docusign"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Docusign",
+    "shortDescription": "Automate contract creation and insights",
+    "longDescription": "Automate contract creation and insights",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Find DocuSign envelopes waiting on me and summarize what needs action.",
+      "Search for agreements with a customer and pull signing status, recipients, and key dates.",
+      "Review recently completed envelopes and extract renewal or obligation dates."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "rj-skills-hbr-finder",
+  "version": "2026.05.08.1",
+  "description": "哈佛商业评论中文版文章检索插件。",
+  "author": {
+    "name": "Ruijie",
+    "url": "https://uniapi.ruijie.com.cn/"
+  },
+  "homepage": "https://uniapi.ruijie.com.cn/",
+  "repository": "https://uniapi.ruijie.com.cn/",
+  "license": "Proprietary",
+  "keywords": [
+    "ruijie",
+    "hbr"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "HBR 中文版检索",
+    "shortDescription": "检索哈佛商业评论中文版文章",
+    "longDescription": "按关键词检索哈佛商业评论中文版文章，获取文章详情，并输出带正文和图片的 Markdown。",
+    "developerName": "Ruijie",
+    "category": "锐捷",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://uniapi.ruijie.com.cn/",
+    "privacyPolicyURL": "https://uniapi.ruijie.com.cn/",
+    "termsOfServiceURL": "https://uniapi.ruijie.com.cn/",
+    "defaultPrompt": [
+      "查找 HBR 中文版 AI 战略文章",
+      "检索哈佛商业评论中文版组织管理文章"
+    ],
+    "brandColor": "#A51E22",
+    "composerIcon": "./assets/rj-skills-hbr-finder.png",
+    "logo": "./assets/rj-skills-hbr-finder.png",
+    "screenshots": []
+  }
+}

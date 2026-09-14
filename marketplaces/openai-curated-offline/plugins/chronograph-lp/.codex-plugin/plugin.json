@@ -1,0 +1,40 @@
+{
+  "name": "chronograph-lp",
+  "version": "1.0.3",
+  "description": "Portfolio monitoring and analytics for private capital LP teams",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "chronograph-lp"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Chronograph LP",
+    "shortDescription": "Trusted portfolio data for private capital LP teams",
+    "longDescription": "Portfolio monitoring and analytics for private capital LP teams",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Find Chronograph LP portfolio updates and summarize key performance changes.",
+      "Pull Chronograph LP fund metrics for this quarter and highlight risks.",
+      "Compare Chronograph LP portfolio KPIs and flag outliers."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

@@ -1,0 +1,38 @@
+{
+  "name": "teamwork-com",
+  "version": "1.0.3",
+  "description": "Connect to sync Teamwork projects and tasks for use in Codex.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "teamwork-com"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Teamwork.com",
+    "shortDescription": "Connect to sync Teamwork projects and tasks for use in Codex.",
+    "longDescription": "Connect to sync Teamwork projects and tasks for use in Codex.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Summarize the current Teamwork.com project status"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

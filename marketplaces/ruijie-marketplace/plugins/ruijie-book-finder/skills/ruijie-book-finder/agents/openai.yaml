@@ -1,0 +1,9 @@
+interface:
+  display_name: "锐捷-快速找书"
+  short_description: "v2026.05.07.01；参考 bhvr 快速找书格式并支持分页续取"
+  icon_small: "./assets/ruijie-book-finder.svg"
+  icon_large: "./assets/ruijie-book-finder.svg"
+  default_prompt: "使用 $ruijie-book-finder 按 bhvr 格式快速找书。"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,39 @@
+{
+  "name": "notion",
+  "version": "0.1.5",
+  "description": "Notion workflows for implementation planning, research synthesis, meeting preparation, and knowledge capture.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "notion"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Notion",
+    "shortDescription": "Notion workflows for specs, research, meetings, and knowledge capture",
+    "longDescription": "Notion workflows for implementation planning, research synthesis, meeting preparation, and knowledge capture.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Search Notion workspace content, update pages, or turn specs, notes, and meeting context into structured outputs"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/notion.png",
+    "logo": "./assets/notion.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

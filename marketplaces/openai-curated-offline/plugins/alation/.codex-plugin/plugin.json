@@ -1,0 +1,40 @@
+{
+  "name": "alation",
+  "version": "1.0.3",
+  "description": "Trusted enterprise data context and governance",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "alation"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Alation",
+    "shortDescription": "Trusted enterprise data context and governance",
+    "longDescription": "Trusted enterprise data context and governance",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Search Alation for data assets related to this metric and summarize owners and definitions.",
+      "Find certified Alation tables for this analysis and explain lineage, quality, and caveats.",
+      "Review Alation documentation for this dataset and draft a query-ready data brief."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

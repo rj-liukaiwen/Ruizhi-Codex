@@ -1,0 +1,38 @@
+{
+  "name": "biorender",
+  "version": "1.0.2",
+  "description": "BioRender helps scientists create professional figures in minutes.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "biorender"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "BioRender",
+    "shortDescription": "BioRender helps scientists create professional figures in minutes.",
+    "longDescription": "BioRender helps scientists create professional figures in minutes.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Can you find me some GLP-1 diagram templates"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/app-icon.png",
+    "logo": "./assets/app-icon.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

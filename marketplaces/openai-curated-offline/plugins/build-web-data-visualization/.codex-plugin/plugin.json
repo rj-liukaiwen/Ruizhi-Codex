@@ -1,0 +1,40 @@
+{
+  "name": "build-web-data-visualization",
+  "version": "0.1.21",
+  "description": "Design, critique, implement, test, and export web data visualizations in Codex, including charts, maps, dashboards, Gantt, UML, scrollytelling, reports, slides, mobile views, shareable state, and advanced WebGL concepts.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "build-web-data-visualization"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Build Web Data Visualization",
+    "shortDescription": "Design, build, test, and export web data visualizations",
+    "longDescription": "Design, critique, implement, test, and export web data visualizations in Codex, including charts, maps, dashboards, Gantt, UML, scrollytelling, reports, slides, mobile views, shareable state, and advanced WebGL concepts.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Visually design this advanced visualization with large-screen and mobile concepts",
+      "Choose the best chart, layout, shareable state, grammar, and stack for this dataset",
+      "Design QA for this chart, dashboard, map, or WebGL visualization"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/app-icon.svg",
+    "logo": "./assets/app-icon.svg",
+    "screenshots": []
+  }
+}

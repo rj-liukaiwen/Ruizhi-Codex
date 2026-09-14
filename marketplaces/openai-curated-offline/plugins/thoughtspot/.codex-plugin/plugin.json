@@ -1,0 +1,40 @@
+{
+  "name": "thoughtspot",
+  "version": "1.0.3",
+  "description": "Trusted business data answers",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "thoughtspot"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "ThoughtSpot",
+    "shortDescription": "Trusted business data answers",
+    "longDescription": "Trusted business data answers",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Search ThoughtSpot for sales performance answers and summarize the key drivers.",
+      "Find dashboards related to pipeline health and explain the biggest movement this quarter.",
+      "Analyze revenue by segment in ThoughtSpot and highlight anomalies worth investigating."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "nvidia",
+  "version": "1.0.2",
+  "description": "Skills for NVIDIAs ecosystem spans GPU acceleration, CUDA, AI agents, inference, robotics, Physical AI, Omniverse, and simulation. This plugin helps you understand the pieces, choose a path, validate your setup, and build practical NVIDIA-powered workflows.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "nvidia"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "NVIDIA",
+    "shortDescription": "Guided help for NVIDIA AI, GPU, robotics, simulation, and 3D workflows.",
+    "longDescription": "Skills for NVIDIAs ecosystem spans GPU acceleration, CUDA, AI agents, inference, robotics, Physical AI, Omniverse, and simulation. This plugin helps you understand the pieces, choose a path, validate your setup, and build practical NVIDIA-powered workflows.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Research NVIDIA CUDA-X for me and explain which libraries matter for simulation and robotics",
+      "How I could turn real-world driving footage into a 3D neural scene for simulation",
+      "Help me deploy a secure OpenClaw agent"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/nvidia.png",
+    "logo": "./assets/nvidia.png",
+    "screenshots": []
+  }
+}

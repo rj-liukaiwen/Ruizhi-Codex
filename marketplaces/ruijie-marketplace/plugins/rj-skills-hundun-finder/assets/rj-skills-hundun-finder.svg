@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Hundun Finder">
+  <rect width="128" height="128" rx="24" fill="#7A3D9A"/>
+  <path d="M64 28 24 46l40 18 40-18-40-18Z" fill="#FFFFFF"/>
+  <path d="M40 56v16c7 6 15 9 24 9s17-3 24-9V56" fill="#FFFFFF" opacity="0.92"/>
+  <path d="M96 50v18" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="96" cy="74" r="5" fill="#FFFFFF"/>
+  <rect x="34" y="84" width="60" height="18" rx="9" fill="#FFFFFF"/>
+  <path d="m58 88 14 6-14 6Z" fill="#7A3D9A"/>
+</svg>

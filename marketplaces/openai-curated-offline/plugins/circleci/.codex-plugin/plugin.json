@@ -1,0 +1,39 @@
+{
+  "name": "circleci",
+  "version": "1.0.4",
+  "description": "Build, test, and deploy any application",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "circleci"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "CircleCI",
+    "shortDescription": "Build, test, and deploy any application",
+    "longDescription": "Build, test, and deploy any application",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Review the CircleCI configuration for this project and suggest improvements",
+      "Diagnose and fix build failures for the current branch",
+      "Setup the Chunk cli for this project"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  }
+}

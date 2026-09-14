@@ -1,0 +1,40 @@
+{
+  "name": "aiera",
+  "version": "1.0.2",
+  "description": "Institutional financial data and events",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "aiera"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Aiera",
+    "shortDescription": "Institutional financial data and events",
+    "longDescription": "Institutional financial data and events",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Find the latest earnings call transcript for a company in Aiera and summarize key themes.",
+      "Search Aiera events for mentions of a topic across this sector this quarter.",
+      "Compare management commentary from the last two calls for a company."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

@@ -1,0 +1,38 @@
+{
+  "name": "google-calendar",
+  "version": "1.2.3",
+  "description": "Connect Google Calendar for scheduling, availability, daily briefs, and event management.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "google-calendar"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Google Calendar",
+    "shortDescription": "Manage Google Calendar events and schedules",
+    "longDescription": "Connect Google Calendar for scheduling, availability, daily briefs, and event management.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Summarize my calendar, compare availability, prep meetings, or draft event details"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

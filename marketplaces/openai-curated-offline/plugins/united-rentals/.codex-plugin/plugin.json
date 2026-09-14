@@ -1,0 +1,38 @@
+{
+  "name": "united-rentals",
+  "version": "1.0.3",
+  "description": "Get the right equipment for the job without guesswork.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "united-rentals"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "United Rentals",
+    "shortDescription": "Get the right equipment for the job without guesswork.",
+    "longDescription": "Get the right equipment for the job without guesswork.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Find the relevant United Rentals inventory or availability"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

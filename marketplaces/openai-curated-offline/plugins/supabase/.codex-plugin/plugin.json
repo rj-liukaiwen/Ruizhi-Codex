@@ -1,0 +1,40 @@
+{
+  "name": "supabase",
+  "version": "0.1.10",
+  "description": "Access your Supabase projects and perform tasks like managing tables, fetching config, and querying data.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "supabase"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Supabase",
+    "shortDescription": "Supabase skills and MCP tools for Codex",
+    "longDescription": "Access your Supabase projects and perform tasks like managing tables, fetching config, and querying data.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Use Supabase to set up Auth and protected routes for my app.",
+      "Review my Supabase schema and RLS policies for security issues.",
+      "Optimize my Postgres queries and indexes using Supabase best practices."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

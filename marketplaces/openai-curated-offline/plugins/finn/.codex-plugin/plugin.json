@@ -1,0 +1,38 @@
+{
+  "name": "finn",
+  "version": "1.0.4",
+  "description": "A FINN car subscription is a flexible way to stay mobile anytime - without long-term commitments like buyin...",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "finn"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "FINN",
+    "shortDescription": "A FINN car subscription is a flexible way to stay mobile anytime - without long-term commitments like buyin...",
+    "longDescription": "A FINN car subscription is a flexible way to stay mobile anytime - without long-term commitments like buyin...",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Find relevant FINN vehicle options for this request"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

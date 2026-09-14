@@ -1,0 +1,38 @@
+{
+  "name": "brand24",
+  "version": "1.0.3",
+  "description": "The Brand24 app in Codex lets marketing and PR teams instantly explore brand mentions, sentiment, and med...",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "brand24"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Brand24",
+    "shortDescription": "The Brand24 app in Codex lets marketing and PR teams instantly explore brand mentions, sentiment, and med...",
+    "longDescription": "The Brand24 app in Codex lets marketing and PR teams instantly explore brand mentions, sentiment, and med...",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Online popularity of biggest sports shoe"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

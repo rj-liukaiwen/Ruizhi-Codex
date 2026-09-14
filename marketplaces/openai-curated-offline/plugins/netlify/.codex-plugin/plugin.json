@@ -1,0 +1,38 @@
+{
+  "name": "netlify",
+  "version": "1.1.2",
+  "description": "Deploy projects and manage preview or production releases on Netlify.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "netlify"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Netlify",
+    "shortDescription": "Deploy projects and manage releases",
+    "longDescription": "Deploy projects and manage preview or production releases on Netlify.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Deploy this project to Netlify and return the preview URL plus any required fixes"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/app-icon.png",
+    "logo": "./assets/app-icon.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

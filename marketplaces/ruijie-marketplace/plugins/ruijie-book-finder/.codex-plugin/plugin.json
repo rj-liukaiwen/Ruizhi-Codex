@@ -1,0 +1,39 @@
+{
+  "name": "ruijie-book-finder",
+  "version": "2026.05.08.1",
+  "description": "快速找书和结构化书单插件。",
+  "author": {
+    "name": "Ruijie",
+    "url": "https://uniapi.ruijie.com.cn/"
+  },
+  "homepage": "https://uniapi.ruijie.com.cn/",
+  "repository": "https://uniapi.ruijie.com.cn/",
+  "license": "Proprietary",
+  "keywords": [
+    "ruijie",
+    "books"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "快速找书",
+    "shortDescription": "按主题、书名、作者或 ISBN 查找书籍",
+    "longDescription": "压缩检索词，基于可核查来源查找书籍，并分页输出结构化中文书单。",
+    "developerName": "Ruijie",
+    "category": "锐捷",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://uniapi.ruijie.com.cn/",
+    "privacyPolicyURL": "https://uniapi.ruijie.com.cn/",
+    "termsOfServiceURL": "https://uniapi.ruijie.com.cn/",
+    "defaultPrompt": [
+      "找几本 AI 战略相关书",
+      "推荐组织管理经典书目"
+    ],
+    "brandColor": "#2F6F5E",
+    "composerIcon": "./assets/ruijie-book-finder.svg",
+    "logo": "./assets/ruijie-book-finder.svg",
+    "screenshots": []
+  }
+}

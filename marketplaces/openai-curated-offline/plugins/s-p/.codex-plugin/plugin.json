@@ -1,0 +1,40 @@
+{
+  "name": "s-p",
+  "version": "1.0.3",
+  "description": "Query S&P Global financial datasets",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "s-p"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "S&P Global",
+    "shortDescription": "Query S&P Global financial datasets",
+    "longDescription": "Query S&P Global financial datasets",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Pull S&P Global company financials and ratings context for a ticker and summarize the main risks.",
+      "Compare revenue growth, margins, and valuation multiples for a company and its peers in S&P Global.",
+      "Find recent S&P Global research or industry outlook items for a sector and summarize the takeaways."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

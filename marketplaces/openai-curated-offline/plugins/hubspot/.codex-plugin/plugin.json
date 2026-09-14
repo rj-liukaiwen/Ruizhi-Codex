@@ -1,0 +1,41 @@
+{
+  "name": "hubspot",
+  "version": "2.0.3",
+  "description": "Work with your HubSpot data to analyze patterns, create and update records, and manage your CRM operations.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "hubspot"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "HubSpot",
+    "shortDescription": "Work with your HubSpot data to analyze patterns, create and update records, and manage your CRM operations.",
+    "longDescription": "Work with your HubSpot data to analyze patterns, create and update records, and manage your CRM operations.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Review pipeline health and flag risky open deals",
+      "Prepare an account brief for a customer meeting",
+      "Find CRM records with stale or missing data"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

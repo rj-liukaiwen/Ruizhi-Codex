@@ -1,0 +1,38 @@
+{
+  "name": "rj-skills-hbr-finder",
+  "version": "2026.05.08.1",
+  "description": "哈佛商业评论中文版文章检索插件。",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "rj-skills-hbr-finder"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "HBR 中文版检索",
+    "shortDescription": "检索哈佛商业评论中文版文章",
+    "longDescription": "哈佛商业评论中文版文章检索插件。",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "查找 HBR 中文版 AI 战略文章",
+      "检索哈佛商业评论中文版组织管理文章"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/rj-skills-hbr-finder.png",
+    "logo": "./assets/rj-skills-hbr-finder.png",
+    "screenshots": []
+  }
+}

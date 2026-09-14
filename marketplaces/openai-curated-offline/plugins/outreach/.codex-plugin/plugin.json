@@ -1,0 +1,40 @@
+{
+  "name": "outreach",
+  "version": "1.0.2",
+  "description": "Revenue workflow automation with Outreach",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "outreach"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Outreach",
+    "shortDescription": "Revenue workflow automation with Outreach",
+    "longDescription": "Revenue workflow automation with Outreach",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Find stalled Outreach prospects and summarize the next best follow-up.",
+      "Search Outreach sequences for this account and summarize recent engagement.",
+      "Draft a concise Outreach follow-up using recent prospect activity."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

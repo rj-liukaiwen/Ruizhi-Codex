@@ -1,0 +1,4 @@
+interface:
+  display_name: "rj-codex macOS arm64"
+  short_description: "打包并验证锐智 macOS arm64 桌面端产物"
+  default_prompt: "Use $rj-codex-macos-arm64 to build and verify the rj-codex macOS arm64 package."

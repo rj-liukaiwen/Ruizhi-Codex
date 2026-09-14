@@ -1,0 +1,40 @@
+{
+  "name": "midpage",
+  "version": "1.0.3",
+  "description": "Legal research with cited case law",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "midpage"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Midpage",
+    "shortDescription": "Legal research with cited case law",
+    "longDescription": "Legal research with cited case law",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Search Midpage for cases relevant to this legal issue and summarize the strongest authorities.",
+      "Find statutes and regulations related to this matter and explain how they apply.",
+      "Draft a research memo from Midpage results with citations and open questions."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

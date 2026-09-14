@@ -1,0 +1,38 @@
+{
+  "name": "ruijie-seedance-prompt",
+  "version": "2026.05.08.1",
+  "description": "Seedance 2.0 视频提示词助手插件。",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "ruijie-seedance-prompt"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Seedance 提示词助手",
+    "shortDescription": "为 Seedance 2.0 生成可控视频提示词",
+    "longDescription": "Seedance 2.0 视频提示词助手插件。",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "用 Seedance 提示词助手写一个 10 秒产品广告提示词",
+      "把这个想法整理成 Seedance 2.0 视频生成 prompt"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/ruijie-seedance-prompt.png",
+    "logo": "./assets/ruijie-seedance-prompt.png",
+    "screenshots": []
+  }
+}

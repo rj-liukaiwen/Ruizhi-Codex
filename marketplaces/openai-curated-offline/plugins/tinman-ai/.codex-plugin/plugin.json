@@ -1,0 +1,38 @@
+{
+  "name": "tinman-ai",
+  "version": "1.0.3",
+  "description": "Tinman AI helps loan officers and underwriters quickly underwrite home financing scenarios and answer compl...",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "tinman-ai"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Tinman AI",
+    "shortDescription": "Tinman AI helps loan officers and underwriters quickly underwrite home financing scenarios and answer compl...",
+    "longDescription": "Tinman AI helps loan officers and underwriters quickly underwrite home financing scenarios and answer compl...",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "I have borrower at 52% DTI who wants HELOC w/ $450/month"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

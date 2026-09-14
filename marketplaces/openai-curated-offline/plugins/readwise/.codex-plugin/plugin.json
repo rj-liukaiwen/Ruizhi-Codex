@@ -1,0 +1,38 @@
+{
+  "name": "readwise",
+  "version": "1.0.3",
+  "description": "The official app for Readwise and Reader.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "readwise"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Readwise",
+    "shortDescription": "The official app for Readwise and Reader.",
+    "longDescription": "The official app for Readwise and Reader.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Find the most relevant highlights in Readwise"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

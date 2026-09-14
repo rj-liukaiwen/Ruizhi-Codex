@@ -1,0 +1,38 @@
+{
+  "name": "myregistry-com",
+  "version": "1.0.3",
+  "description": "MyRegistry.com helps make gift-giving easy for friends & family to get you the gifts you really want!",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "myregistry-com"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "MyRegistry.com",
+    "shortDescription": "MyRegistry.com helps make gift-giving easy for friends & family to get you the gifts you really want!",
+    "longDescription": "MyRegistry.com helps make gift-giving easy for friends & family to get you the gifts you really want!",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Find the relevant registry details in MyRegistry.com"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

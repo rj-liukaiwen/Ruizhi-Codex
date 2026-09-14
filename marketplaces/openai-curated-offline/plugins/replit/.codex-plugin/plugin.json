@@ -1,0 +1,40 @@
+{
+  "name": "replit",
+  "version": "1.0.2",
+  "description": "Create and iterate Replit web apps",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "replit"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Replit",
+    "shortDescription": "Create and iterate Replit web apps",
+    "longDescription": "Create and iterate Replit web apps",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Find my Replit projects and summarize the most recent activity.",
+      "Open a Replit workspace and explain the app structure.",
+      "Review Replit deployments for this project and flag issues."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

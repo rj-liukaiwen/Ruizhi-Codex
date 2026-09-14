@@ -1,0 +1,40 @@
+{
+  "name": "actively",
+  "version": "1.0.3",
+  "description": "Account agents for GTM intelligence",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "actively"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Actively",
+    "shortDescription": "Account agents for GTM intelligence",
+    "longDescription": "Account agents for GTM intelligence",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Find high-fit Actively accounts showing recent buying signals and summarize next steps.",
+      "Search Actively for contacts at this target account and pull relevant prospect context.",
+      "Build a prioritized Actively prospect list for this ICP and explain why each account fits."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

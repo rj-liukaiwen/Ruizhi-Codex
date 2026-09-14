@@ -1,0 +1,4 @@
+interface:
+  display_name: "锐捷 Codex 桌面版"
+  short_description: "排查和改造 Codex Desktop 配置、网络与插件链路"
+  default_prompt: "Use $ruijie-codex-desktop to inspect Codex Desktop local state and plan a safe modification."

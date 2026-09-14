@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ruizhi Codex Config Summary"
+  short_description: "Summarize models, providers, proxies, auth endpoints, and local Ruizhi settings"
+  default_prompt: "Use $ruizhi-codex-config-summary to summarize the active .ruizhi Codex configuration without exposing credentials."

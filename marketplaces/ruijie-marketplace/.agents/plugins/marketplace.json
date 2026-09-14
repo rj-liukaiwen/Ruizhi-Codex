@@ -1,0 +1,104 @@
+{
+  "name": "ruijie-marketplace",
+  "interface": {
+    "displayName": "锐捷插件"
+  },
+  "plugins": [
+    {
+      "name": "imagegen",
+      "source": {
+        "source": "local",
+        "path": "./plugins/imagegen"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Ruizhi"
+    },
+    {
+      "name": "rj-skills-hbr-finder",
+      "source": {
+        "source": "local",
+        "path": "./plugins/rj-skills-hbr-finder"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "锐捷"
+    },
+    {
+      "name": "rj-skills-hundun-finder",
+      "source": {
+        "source": "local",
+        "path": "./plugins/rj-skills-hundun-finder"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "锐捷"
+    },
+    {
+      "name": "ruijie-book-finder",
+      "source": {
+        "source": "local",
+        "path": "./plugins/ruijie-book-finder"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "锐捷"
+    },
+    {
+      "name": "ruijie-km",
+      "source": {
+        "source": "local",
+        "path": "./plugins/ruijie-km"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "锐捷"
+    },
+    {
+      "name": "ruijie-notebooklm",
+      "source": {
+        "source": "local",
+        "path": "./plugins/ruijie-notebooklm"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "锐捷"
+    },
+    {
+      "name": "ruijie-seedance-prompt",
+      "source": {
+        "source": "local",
+        "path": "./plugins/ruijie-seedance-prompt"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "锐捷"
+    },
+    {
+      "name": "ruijie-volcengine-video-generation",
+      "source": {
+        "source": "local",
+        "path": "./plugins/ruijie-volcengine-video-generation"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "锐捷"
+    }
+  ]
+}

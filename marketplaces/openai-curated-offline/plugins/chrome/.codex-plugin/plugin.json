@@ -1,0 +1,39 @@
+{
+  "name": "chrome",
+  "version": "26.707.61608",
+  "description": "Chrome automation for tasks that depend on the user's existing Chrome state: tabs, logged-in sessions, cookies, extensions, and ChatGPT Chrome Extension setup. Prefer purpose-built connectors, APIs, or CLIs. If one fails due to missing or expired authentication, ask the user to reauthenticate or explicitly approve Chrome as a fallback.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "chrome"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Chrome",
+    "shortDescription": "Control Chrome with ChatGPT",
+    "longDescription": "Chrome automation for tasks that depend on the user's existing Chrome state: tabs, logged-in sessions, cookies, extensions, and ChatGPT Chrome Extension setup. Prefer purpose-built connectors, APIs, or CLIs. If one fails due to missing or expired authentication, ask the user to reauthenticate or explicitly approve Chrome as a fallback.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "file my expenses for me",
+      "review my messages on social media",
+      "put in a PTO request in Workday"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/google-chrome.png",
+    "logo": "./assets/google-chrome.png",
+    "screenshots": []
+  }
+}

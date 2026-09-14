@@ -1,0 +1,7 @@
+interface:
+  display_name: "火山引擎视频生成"
+  short_description: "提交文生视频或图生视频任务"
+  icon_small: "./assets/ruijie-volcengine-video-generation.png"
+  icon_large: "./assets/ruijie-volcengine-video-generation.png"
+  brand_color: "#1664FF"
+  default_prompt: "使用 $锐捷-火山引擎视频生成 基于这个输入创建视频。"

@@ -1,0 +1,10 @@
+---
+name: inflection
+description: Auto-detect biggest acceleration/deceleration inflections across all
+---
+
+# Daloopa: inflection
+
+Auto-detect biggest acceleration/deceleration inflections across all
+
+If this workflow requires an account-backed connector, use the installed app/connector for Daloopa. If authorization is missing, ask the user to connect Daloopa before taking account actions.

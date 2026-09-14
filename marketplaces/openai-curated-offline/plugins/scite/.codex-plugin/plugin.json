@@ -1,0 +1,38 @@
+{
+  "name": "scite",
+  "version": "1.0.3",
+  "description": "Scite delivers answers grounded in peer-reviewed research you can verify.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "scite"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Scite",
+    "shortDescription": "Scite delivers answers grounded in peer-reviewed research you can verify.",
+    "longDescription": "Scite delivers answers grounded in peer-reviewed research you can verify.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "What's latest research on impact of adolescent screen time"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

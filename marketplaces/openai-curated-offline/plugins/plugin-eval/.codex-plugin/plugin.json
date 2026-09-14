@@ -1,0 +1,39 @@
+{
+  "name": "plugin-eval",
+  "version": "0.1.2",
+  "description": "Evaluate Codex skills and plugins from chat with a beginner-friendly start command, local-first reports, token budget explanations, and guided benchmarking.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "plugin-eval"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Plugin Eval",
+    "shortDescription": "Start from chat, then evaluate or benchmark locally",
+    "longDescription": "Evaluate Codex skills and plugins from chat with a beginner-friendly start command, local-first reports, token budget explanations, and guided benchmarking.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Give me an analysis of the game studio plugin.",
+      "Evaluate this plugin.",
+      "Why did this score that way?"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/plugin-eval.svg",
+    "logo": "./assets/plugin-eval.svg",
+    "screenshots": []
+  }
+}

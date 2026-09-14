@@ -1,0 +1,37 @@
+{
+  "name": "imagegen",
+  "version": "2026.07.30.1",
+  "description": "Generate raster images through the built-in Ruizhi image generation helper and Ruizhi backend image API.",
+  "author": {
+    "name": "Ruijie",
+    "url": "https://gptauth.ruijie.com.cn/"
+  },
+  "homepage": "https://gptauth.ruijie.com.cn/codex",
+  "repository": "https://gptauth.ruijie.com.cn/codex",
+  "license": "Proprietary",
+  "keywords": [
+    "imagegen",
+    "image generation",
+    "ruizhi",
+    "gpt-image-2"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Image Gen",
+    "shortDescription": "Generate PNG/JPEG/WebP images with Ruizhi image generation.",
+    "longDescription": "Generate raster images such as illustrations, product images, UI mockups, covers, sprites, banners, and marketing visuals through the packaged Ruizhi image helper.",
+    "developerName": "Ruijie",
+    "category": "Ruizhi",
+    "capabilities": ["Interactive", "Write"],
+    "websiteURL": "https://gptauth.ruijie.com.cn/codex",
+    "privacyPolicyURL": "https://gptauth.ruijie.com.cn/codex",
+    "termsOfServiceURL": "https://gptauth.ruijie.com.cn/codex",
+    "defaultPrompt": [
+      "Generate a product mockup image",
+      "Create a website hero illustration",
+      "Generate a UI mockup image"
+    ],
+    "brandColor": "#2563EB",
+    "screenshots": []
+  }
+}

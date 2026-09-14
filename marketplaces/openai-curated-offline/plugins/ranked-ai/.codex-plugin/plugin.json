@@ -1,0 +1,38 @@
+{
+  "name": "ranked-ai",
+  "version": "1.0.3",
+  "description": "Ranked AI provides industry leading AI SEO & PPC software, with a fully managed service integrated into it.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "ranked-ai"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Ranked AI",
+    "shortDescription": "Ranked AI provides industry leading AI SEO & PPC software, with a fully managed service integrated into it.",
+    "longDescription": "Ranked AI provides industry leading AI SEO & PPC software, with a fully managed service integrated into it.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Show rankings for project"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

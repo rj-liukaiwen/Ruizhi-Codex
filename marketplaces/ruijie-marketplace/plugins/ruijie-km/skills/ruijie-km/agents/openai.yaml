@@ -1,0 +1,7 @@
+interface:
+  display_name: "锐捷知识库"
+  short_description: "查询 KM 文档、分类、标签和资料详情"
+  icon_small: "./assets/ruijie-km.svg"
+  icon_large: "./assets/ruijie-km.svg"
+  brand_color: "#D71920"
+  default_prompt: "使用 $ruijie-km 查询锐捷 KM 文档、最新彩页、参数规格、分类标签和资料详情。"

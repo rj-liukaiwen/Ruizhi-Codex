@@ -1,0 +1,42 @@
+{
+  "recorded_at": "2026-08-12T11:21:01+08:00",
+  "status": "user_verified",
+  "version": "0.3.1442",
+  "branch": "gpt-codex-0.3.1442",
+  "head": "8031e14066a735864e7f9b0c9bdb6b2dd235728d",
+  "tracked_diff_sha256": "91C9534B1BE2612A2CB5BBA39A51AA14C6AE0E38048304391376EF41FD4180BB",
+  "working_tree_status_entries": 41,
+  "artifacts": [
+    {
+      "path": "dist/test-app-0.3.1442-legacy-thread-fix-20260812",
+      "purpose": "verified test app"
+    },
+    {
+      "path": "dist/installer/Ruizhi-Setup-0.3.1442.exe",
+      "size": 529040430,
+      "sha256": "79F007788828E11A10F2EF3D1640DBC58AEBB27BB27D7AA160B5A4486AD41618"
+    },
+    {
+      "path": "dist/installer/ruizhi-windows-0.3.1442.zip",
+      "size": 733003539,
+      "sha256": "52E873280AACF3A3834927E25E768A4E4C90C8E066A7A7DD6C441DF525CE44DD"
+    }
+  ],
+  "critical_files": [
+    {
+      "path": "resources/bridge/ruizhi-responses-bridge.cjs",
+      "size": 43363,
+      "sha256": "BA6BA693F545350BF4A376757475D3732631ECA06471920CE1F1548CD248C2B6"
+    },
+    {
+      "path": "dist/test-app-0.3.1442-legacy-thread-fix-20260812/resources/bridge/ruizhi-responses-bridge.cjs",
+      "size": 43363,
+      "sha256": "BA6BA693F545350BF4A376757475D3732631ECA06471920CE1F1548CD248C2B6"
+    }
+  ],
+  "verification": {
+    "responses_bridge_tests": "5/5 passed",
+    "legacy_encrypted_reasoning_live_upstream": "HTTP 200, completed",
+    "packaging": "passed"
+  }
+}

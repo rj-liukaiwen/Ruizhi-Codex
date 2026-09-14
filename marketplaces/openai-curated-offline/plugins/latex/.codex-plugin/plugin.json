@@ -1,0 +1,40 @@
+{
+  "name": "latex",
+  "version": "0.2.4",
+  "description": "Compile LaTeX with bundled Tectonic for simple projects and TeX Live or MacTeX for full projects.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "latex"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "LaTeX",
+    "shortDescription": "Compile LaTeX with Tectonic or TeX Live",
+    "longDescription": "Compile LaTeX with bundled Tectonic for simple projects and TeX Live or MacTeX for full projects.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Use latex-doctor to check whether this machine can compile LaTeX.",
+      "Use latex-compile to build the main TeX file in this project, trying Tectonic first when the project is simple.",
+      "Use texlive-runtime-installer to install managed full TeX Live only if no existing TeX Live is detected."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/latex.png",
+    "logo": "./assets/latex.png",
+    "screenshots": []
+  }
+}

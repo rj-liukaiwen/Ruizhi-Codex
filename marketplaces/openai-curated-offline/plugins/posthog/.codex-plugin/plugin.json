@@ -1,0 +1,44 @@
+{
+  "name": "posthog",
+  "version": "0.1.2",
+  "description": "Analyze product data and manage experiments",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "posthog"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "PostHog",
+    "shortDescription": "Analyze product data and manage experiments",
+    "longDescription": "Analyze product data and manage experiments",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Show me signups this month",
+      "Create a feature flag for the new checkout",
+      "Why are users dropping off in onboarding?"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": [
+      "./assets/screenshot-1.png",
+      "./assets/screenshot-2.png"
+    ]
+  },
+  "apps": "./.app.json"
+}

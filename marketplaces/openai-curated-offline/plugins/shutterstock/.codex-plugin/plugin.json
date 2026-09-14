@@ -1,0 +1,40 @@
+{
+  "name": "shutterstock",
+  "version": "1.0.3",
+  "description": "Search stock media libraries",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "shutterstock"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Shutterstock",
+    "shortDescription": "Search stock media libraries",
+    "longDescription": "Search stock media libraries",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Search Shutterstock for hero images for this campaign and compare options.",
+      "Find Shutterstock video clips matching this storyboard and summarize choices.",
+      "Build a shortlist of Shutterstock assets for this social launch."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

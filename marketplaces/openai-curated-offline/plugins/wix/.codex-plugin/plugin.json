@@ -1,0 +1,41 @@
+{
+  "name": "wix",
+  "version": "1.1.2",
+  "description": "Build and deploy Wix apps and headless websites, and manage your Wix business. Includes CLI development skills, Wix Headless for any frontend framework, and Wix MCP server for eCommerce, CMS, dashboard extensions, and more.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "wix"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Wix",
+    "shortDescription": "Build Wix apps, headless websites, and manage your Wix business from Codex",
+    "longDescription": "Build and deploy Wix apps and headless websites, and manage your Wix business. Includes CLI development skills, Wix Headless for any frontend framework, and Wix MCP server for eCommerce, CMS, dashboard extensions, and more.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Build a Wix app extension with Wix Design System UI",
+      "Build a Wix app with a shipping fee service plugin",
+      "Set up Wix Stores products, pickup, or CMS data"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.svg",
+    "logo": "./assets/logo.svg",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

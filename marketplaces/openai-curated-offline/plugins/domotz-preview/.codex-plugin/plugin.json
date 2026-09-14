@@ -1,0 +1,38 @@
+{
+  "name": "domotz-preview",
+  "version": "1.0.3",
+  "description": "Monitor and manage your network infrastructure through natural language.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "domotz-preview"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Domotz (Preview)",
+    "shortDescription": "Monitor and manage your network infrastructure through natural language.",
+    "longDescription": "Monitor and manage your network infrastructure through natural language.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Summarize the current network state in Domotz"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

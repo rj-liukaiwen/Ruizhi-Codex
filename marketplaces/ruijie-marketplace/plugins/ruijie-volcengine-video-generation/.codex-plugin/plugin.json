@@ -1,0 +1,41 @@
+{
+  "name": "ruijie-volcengine-video-generation",
+  "version": "2026.05.12.1",
+  "description": "火山引擎 AI 视频生成插件。",
+  "author": {
+    "name": "Ruijie",
+    "url": "https://uniapi.ruijie.com.cn/"
+  },
+  "homepage": "https://uniapi.ruijie.com.cn/",
+  "repository": "https://uniapi.ruijie.com.cn/",
+  "license": "Proprietary",
+  "keywords": [
+    "ruijie",
+    "volcengine",
+    "seedance",
+    "video"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "火山引擎视频生成",
+    "shortDescription": "提交并轮询 AI 视频生成任务",
+    "longDescription": "用于火山引擎/UniAPI 的文生视频、图生视频、生成参数配置和异步任务排查。",
+    "developerName": "Ruijie",
+    "category": "锐捷",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://uniapi.ruijie.com.cn/",
+    "privacyPolicyURL": "https://uniapi.ruijie.com.cn/",
+    "termsOfServiceURL": "https://uniapi.ruijie.com.cn/",
+    "defaultPrompt": [
+      "用火山引擎视频生成创建一个 10 秒短片",
+      "帮我排查火山引擎视频生成任务参数"
+    ],
+    "brandColor": "#1664FF",
+    "composerIcon": "./assets/ruijie-volcengine-video-generation.png",
+    "logo": "./assets/ruijie-volcengine-video-generation.png",
+    "screenshots": []
+  }
+}

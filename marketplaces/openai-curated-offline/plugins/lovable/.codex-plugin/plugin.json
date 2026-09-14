@@ -1,0 +1,40 @@
+{
+  "name": "lovable",
+  "version": "1.0.2",
+  "description": "Create full-stack web apps from prompts",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "lovable"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Lovable",
+    "shortDescription": "Create full-stack web apps from prompts",
+    "longDescription": "Create full-stack web apps from prompts",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Find my Lovable app projects and summarize recent changes.",
+      "Review this Lovable project and identify what is ready to ship.",
+      "Draft a Lovable prompt to add authentication to this app."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

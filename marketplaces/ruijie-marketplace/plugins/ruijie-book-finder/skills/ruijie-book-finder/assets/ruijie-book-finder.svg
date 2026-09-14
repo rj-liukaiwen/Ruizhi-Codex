@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Book Finder">
+  <rect width="128" height="128" rx="24" fill="#2F6F5E"/>
+  <rect x="28" y="32" width="18" height="56" rx="4" fill="#FFFFFF"/>
+  <rect x="50" y="28" width="18" height="60" rx="4" fill="#FFFFFF" opacity="0.94"/>
+  <rect x="72" y="36" width="18" height="52" rx="4" fill="#FFFFFF" opacity="0.88"/>
+  <path d="M37 42v36M59 38v40M81 46v30" fill="none" stroke="#2F6F5E" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="88" cy="92" r="12" fill="none" stroke="#FFFFFF" stroke-width="8"/>
+  <path d="M97 101l9 9" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,40 @@
+{
+  "name": "zoominfo",
+  "version": "1.0.2",
+  "description": "Prospecting and account research with ZoomInfo",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "zoominfo"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "ZoomInfo",
+    "shortDescription": "Prospecting and account research with ZoomInfo",
+    "longDescription": "Prospecting and account research with ZoomInfo",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Find target accounts in this industry and region with buying signals, then rank the best prospects.",
+      "Build a contact list for decision makers at these accounts with titles and company context.",
+      "Research a company in ZoomInfo and identify likely outreach hooks."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

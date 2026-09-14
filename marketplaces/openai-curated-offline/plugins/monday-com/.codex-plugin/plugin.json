@@ -1,0 +1,38 @@
+{
+  "name": "monday-com",
+  "version": "1.0.2",
+  "description": "A powerful MCP connector enabling AI agents to seamlessly interact with monday.com.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "monday-com"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Monday.com",
+    "shortDescription": "A powerful MCP connector enabling AI agents to seamlessly interact with monday.com.",
+    "longDescription": "A powerful MCP connector enabling AI agents to seamlessly interact with monday.com.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Check the marketing campaign status in monday.com"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/app-icon.png",
+    "logo": "./assets/app-icon.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

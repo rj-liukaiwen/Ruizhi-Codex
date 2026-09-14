@@ -1,0 +1,38 @@
+{
+  "name": "keybid-puls",
+  "version": "1.0.3",
+  "description": "Unlock the profitability of short-term rental investments with our ROI Calculator app, tailored for platfor...",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "keybid-puls"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "KeyBid Puls",
+    "shortDescription": "Unlock the profitability of short-term rental investments with our ROI Calculator app, tailored for platfor...",
+    "longDescription": "Unlock the profitability of short-term rental investments with our ROI Calculator app, tailored for platfor...",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Is this apartment worth buying for short-term"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

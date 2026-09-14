@@ -1,0 +1,200 @@
+name: Build macOS
+
+on:
+  push:
+    branches:
+      - "codex/macos-cloud-build"
+  workflow_dispatch:
+    inputs:
+      codex_app_url:
+        description: "Codex macOS .dmg/.zip URL. Leave empty to use CODEX_MACOS_APP_URL secret."
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  macos:
+    name: macOS unsigned package (${{ matrix.arch }})
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - arch: arm64
+            runner: macos-15
+          - arch: x64
+            runner: macos-15-intel
+    env:
+      CODEX_MACOS_APP_URL: ${{ inputs.codex_app_url || secrets.CODEX_MACOS_APP_URL }}
+      CODEX_APP_ROOT: /Applications/Codex.app
+      RUIZHI_MACOS_ARCH: ${{ matrix.arch }}
+      MACOS_CERTIFICATE_P12_BASE64: ${{ secrets.MACOS_CERTIFICATE_P12_BASE64 }}
+      MACOS_CERTIFICATE_PASSWORD: ${{ secrets.MACOS_CERTIFICATE_PASSWORD }}
+      MACOS_CODESIGN_IDENTITY: ${{ secrets.MACOS_CODESIGN_IDENTITY }}
+      APP_STORE_CONNECT_KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
+      APP_STORE_CONNECT_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+      APP_STORE_CONNECT_PRIVATE_KEY: ${{ secrets.APP_STORE_CONNECT_PRIVATE_KEY }}
+      APP_STORE_CONNECT_PRIVATE_KEY_BASE64: ${{ secrets.APP_STORE_CONNECT_PRIVATE_KEY_BASE64 }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.25.x"
+          cache: true
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache patched Codex CLI build
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            .work/codex-source/codex-rs/target
+          key: ${{ runner.os }}-${{ matrix.arch }}-codex-${{ hashFiles('config/rj-codex.json', 'scripts/codex-auth-issuer-source.mjs') }}
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Read build metadata
+        id: build_metadata
+        shell: bash
+        run: |
+          node <<'NODE' >> "$GITHUB_OUTPUT"
+          const fs = require("node:fs");
+          const config = JSON.parse(fs.readFileSync("config/rj-codex.json", "utf8"));
+          const version = process.env.RUIZHI_BUILD_VERSION || config.version;
+          const normalizeArch = (value) => {
+            const arch = String(value || "").trim().toLowerCase();
+            if (["arm64", "aarch64"].includes(arch)) return "arm64";
+            if (["x64", "x86", "x86_64", "amd64", "intel"].includes(arch)) return "x64";
+            throw new Error(`invalid macOS arch: ${value}`);
+          };
+          const arch = normalizeArch(process.env.RUIZHI_MACOS_ARCH);
+          const hostArch = normalizeArch(process.arch);
+          if (!/^[0-9A-Za-z._+-]+$/.test(version)) {
+            throw new Error(`invalid version for artifact name: ${version}`);
+          }
+          if (hostArch !== arch) {
+            throw new Error(`macOS build arch ${arch} must run on a matching host, got ${hostArch}`);
+          }
+          console.log(`version=${version}`);
+          console.log(`arch=${arch}`);
+          NODE
+
+      - name: Install Codex.app source
+        shell: bash
+        run: |
+          set -euo pipefail
+          SOURCE_ROOT="/Applications/Codex.app"
+          if [[ -f "$SOURCE_ROOT/Contents/Resources/app.asar" ]]; then
+            echo "Using existing $SOURCE_ROOT"
+            exit 0
+          fi
+
+          SOURCE_URL="${CODEX_MACOS_APP_URL:-https://persistent.oaistatic.com/codex-app-prod/Codex.dmg}"
+          WORK_DIR="$(mktemp -d)"
+          trap 'rm -rf "$WORK_DIR"' EXIT
+          DOWNLOAD_PATH="$WORK_DIR/$(basename "${SOURCE_URL%%\?*}")"
+          if [[ "$DOWNLOAD_PATH" == "$WORK_DIR/" ]]; then
+            DOWNLOAD_PATH="$WORK_DIR/Codex.dmg"
+          fi
+
+          curl -L --fail --retry 3 --output "$DOWNLOAD_PATH" "$SOURCE_URL"
+
+          APP_PATH=""
+          if [[ "$DOWNLOAD_PATH" == *.zip ]]; then
+            EXTRACT_DIR="$WORK_DIR/extracted"
+            mkdir -p "$EXTRACT_DIR"
+            ditto -x -k "$DOWNLOAD_PATH" "$EXTRACT_DIR"
+            APP_PATH="$(find "$EXTRACT_DIR" -maxdepth 6 -name '*.app' -type d | while read -r app; do
+              if [[ -f "$app/Contents/Resources/app.asar" ]]; then
+                printf '%s\n' "$app"
+                break
+              fi
+            done)"
+          elif [[ "$DOWNLOAD_PATH" == *.dmg ]]; then
+            ATTACH_OUTPUT="$(hdiutil attach -nobrowse -readonly "$DOWNLOAD_PATH")"
+            MOUNT_POINT="$(printf '%s\n' "$ATTACH_OUTPUT" | sed -n 's#^.*\(/Volumes/.*\)$#\1#p' | tail -n 1)"
+            if [[ -z "$MOUNT_POINT" ]]; then
+              echo "Unable to mount Codex dmg"
+              exit 1
+            fi
+            trap 'hdiutil detach "$MOUNT_POINT" >/dev/null 2>&1 || true; rm -rf "$WORK_DIR"' EXIT
+            APP_PATH="$(find "$MOUNT_POINT" -maxdepth 4 -name '*.app' -type d | while read -r app; do
+              if [[ -f "$app/Contents/Resources/app.asar" ]]; then
+                printf '%s\n' "$app"
+                break
+              fi
+            done)"
+          else
+            echo "CODEX_MACOS_APP_URL must point to a .dmg or .zip"
+            exit 1
+          fi
+
+          if [[ -z "$APP_PATH" ]]; then
+            echo "Could not find Codex.app with app.asar in source package"
+            exit 1
+          fi
+
+          sudo rm -rf "$SOURCE_ROOT"
+          sudo ditto "$APP_PATH" "$SOURCE_ROOT"
+          test -f "$SOURCE_ROOT/Contents/Resources/app.asar"
+
+      - name: Build macOS app
+        run: npm run build:macos
+
+      - name: Upload macOS update zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: ruizhi-macos-update-${{ steps.build_metadata.outputs.version }}-${{ matrix.arch }}
+          path: dist/Ruizhi-macos-${{ steps.build_metadata.outputs.version }}-${{ matrix.arch }}.zip
+          if-no-files-found: error
+
+      - name: Upload macOS dmg
+        uses: actions/upload-artifact@v4
+        with:
+          name: ruizhi-macos-dmg-${{ steps.build_metadata.outputs.version }}-${{ matrix.arch }}
+          path: dist/Ruizhi-macos-${{ steps.build_metadata.outputs.version }}-${{ matrix.arch }}.dmg
+          if-no-files-found: error
+
+      - name: Upload latest-mac.yml
+        uses: actions/upload-artifact@v4
+        with:
+          name: ruizhi-macos-latest-yml-${{ steps.build_metadata.outputs.version }}-${{ matrix.arch }}
+          path: dist/latest-mac.yml
+          if-no-files-found: error
+
+      - name: Upload versioned latest-mac.yml
+        uses: actions/upload-artifact@v4
+        with:
+          name: ruizhi-macos-latest-yml-versioned-${{ steps.build_metadata.outputs.version }}-${{ matrix.arch }}
+          path: dist/latest-mac-${{ steps.build_metadata.outputs.version }}-${{ matrix.arch }}.yml
+          if-no-files-found: error
+
+      - name: Upload macOS update json
+        uses: actions/upload-artifact@v4
+        with:
+          name: ruizhi-macos-update-json-${{ steps.build_metadata.outputs.version }}-${{ matrix.arch }}
+          path: dist/ruizhi-latest-macos-${{ matrix.arch }}.json
+          if-no-files-found: error
+
+      - name: Upload versioned macOS update json
+        uses: actions/upload-artifact@v4
+        with:
+          name: ruizhi-macos-update-json-versioned-${{ steps.build_metadata.outputs.version }}-${{ matrix.arch }}
+          path: dist/ruizhi-latest-macos-${{ steps.build_metadata.outputs.version }}-${{ matrix.arch }}.json
+          if-no-files-found: error

@@ -1,0 +1,38 @@
+{
+  "name": "ruijie-volcengine-video-generation",
+  "version": "2026.05.12.1",
+  "description": "火山引擎 AI 视频生成插件。",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "ruijie-volcengine-video-generation"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "火山引擎视频生成",
+    "shortDescription": "提交并轮询 AI 视频生成任务",
+    "longDescription": "火山引擎 AI 视频生成插件。",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "用火山引擎视频生成创建一个 10 秒短片",
+      "帮我排查火山引擎视频生成任务参数"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/ruijie-volcengine-video-generation.png",
+    "logo": "./assets/ruijie-volcengine-video-generation.png",
+    "screenshots": []
+  }
+}

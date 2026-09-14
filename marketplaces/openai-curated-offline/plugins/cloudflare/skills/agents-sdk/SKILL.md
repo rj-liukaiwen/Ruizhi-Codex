@@ -1,0 +1,10 @@
+---
+name: agents-sdk
+description: Build AI agents on Cloudflare Workers using the Agents SDK. Load when creating stateful agents, durable workflows, real-time WebSocket apps, scheduled tasks, MCP servers, or chat applications. Covers Agent class, state management, callable RPC, Workflows integration, and React hooks. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.
+---
+
+# Cloudflare: agents-sdk
+
+Build AI agents on Cloudflare Workers using the Agents SDK. Load when creating stateful agents, durable workflows, real-time WebSocket apps, scheduled tasks, MCP servers, or chat applications. Covers Agent class, state management, callable RPC, Workflows integration, and React hooks. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.
+
+If this workflow requires an account-backed connector, use the installed app/connector for Cloudflare. If authorization is missing, ask the user to connect Cloudflare before taking account actions.

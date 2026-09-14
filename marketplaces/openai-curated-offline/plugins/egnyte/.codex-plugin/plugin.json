@@ -1,0 +1,38 @@
+{
+  "name": "egnyte",
+  "version": "1.0.3",
+  "description": "Work with documents and files stored in Egnyte directly from Codex.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "egnyte"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Egnyte",
+    "shortDescription": "Work with documents and files stored in Egnyte directly from Codex.",
+    "longDescription": "Work with documents and files stored in Egnyte directly from Codex.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "What IT contracts do we have"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

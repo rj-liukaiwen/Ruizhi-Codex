@@ -1,0 +1,40 @@
+{
+  "name": "close",
+  "version": "1.0.3",
+  "description": "Reference and update Close CRM",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "close"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Close",
+    "shortDescription": "Reference and update Close CRM",
+    "longDescription": "Reference and update Close CRM",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Find Close opportunities with no recent activity and summarize recommended next steps.",
+      "Search Close for leads from a company and summarize status, owner, and last touch.",
+      "Create a pipeline review from Close for deals closing this month."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

@@ -1,0 +1,48 @@
+{
+  "name": "convex",
+  "version": "0.1.2",
+  "description": "Add a reactive, type-safe backend, database, server functions, and scaling guidance to JavaScript and TypeScript apps with Convex.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "convex"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Convex",
+    "shortDescription": "Add a backend to JS/TS apps.",
+    "longDescription": "Add a reactive, type-safe backend, database, server functions, and scaling guidance to JavaScript and TypeScript apps with Convex.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Backend setup",
+      "Database schema",
+      "Reactive queries",
+      "Server functions",
+      "Auth-aware data access",
+      "Realtime apps",
+      "Scheduled jobs",
+      "File storage",
+      "Mobile backends",
+      "Scaling guidance"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Add a backend to this app.",
+      "Design the database schema.",
+      "Add real-time data updates."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

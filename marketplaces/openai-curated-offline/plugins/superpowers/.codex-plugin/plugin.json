@@ -1,0 +1,39 @@
+{
+  "name": "superpowers",
+  "version": "5.1.3",
+  "description": "An agentic skills framework & software development methodology that works: planning, TDD, debugging, and collaboration workflows.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "superpowers"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Superpowers",
+    "shortDescription": "Planning, TDD, debugging, and delivery workflows for coding agents",
+    "longDescription": "An agentic skills framework & software development methodology that works: planning, TDD, debugging, and collaboration workflows.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "I've got an idea for something I'd like to build.",
+      "Let's add a feature to this project."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/superpowers-small.svg",
+    "logo": "./assets/superpowers-small.svg",
+    "screenshots": []
+  }
+}

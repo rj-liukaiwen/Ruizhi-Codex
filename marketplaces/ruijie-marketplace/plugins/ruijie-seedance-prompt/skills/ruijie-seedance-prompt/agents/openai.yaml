@@ -1,0 +1,6 @@
+interface:
+  display_name: "Seedance 提示词助手"
+  short_description: "生成 Seedance 2.0 视频提示词"
+  icon_small: "./assets/ruijie-seedance-prompt.png"
+  icon_large: "./assets/ruijie-seedance-prompt.png"
+  default_prompt: "使用 $锐捷-Seedance 提示词助手 把这个想法整理成 Seedance 2.0 视频生成 prompt。"

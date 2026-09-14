@@ -1,0 +1,38 @@
+{
+  "name": "clickup",
+  "version": "1.0.3",
+  "description": "Turn Codex into your ClickUp command center.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "clickup"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "ClickUp",
+    "shortDescription": "Turn Codex into your ClickUp command center.",
+    "longDescription": "Turn Codex into your ClickUp command center.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Flag whether Sprint 14: Simplifying UI is at risk"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

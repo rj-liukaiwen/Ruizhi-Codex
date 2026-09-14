@@ -1,0 +1,44 @@
+{
+  "name": "mixpanel-headless",
+  "version": "0.1.2",
+  "description": "Analyze Mixpanel data with the mixpanel_headless Python SDK and Codex skills.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "mixpanel-headless"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Mixpanel Headless",
+    "shortDescription": "Analyze Mixpanel data with Python",
+    "longDescription": "Analyze Mixpanel data with the mixpanel_headless Python SDK and Codex skills.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Analyze my Mixpanel signup funnel with Python",
+      "Find product analytics insights in Mixpanel",
+      "Build a Mixpanel dashboard from key events"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": [
+      "./assets/screenshot-1.png",
+      "./assets/screenshot-2.png",
+      "./assets/screenshot-3.png"
+    ]
+  }
+}

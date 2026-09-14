@@ -1,0 +1,38 @@
+{
+  "name": "binance",
+  "version": "1.0.2",
+  "description": "Binance for Codex lets you access and explore Binance public, read-only market data using natural language.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "binance"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Binance",
+    "shortDescription": "Binance for Codex lets you access and explore Binance public, read-only market data using natural language.",
+    "longDescription": "Binance for Codex lets you access and explore Binance public, read-only market data using natural language.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Show the latest Binance market context for this asset"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/app-icon.png",
+    "logo": "./assets/app-icon.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

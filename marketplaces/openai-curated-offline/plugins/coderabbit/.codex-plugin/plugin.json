@@ -1,0 +1,37 @@
+{
+  "name": "coderabbit",
+  "version": "1.1.4",
+  "description": "AI-powered code review in Codex, powered by CodeRabbit.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "coderabbit"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "CodeRabbit",
+    "shortDescription": "Run AI-powered code review for your current changes",
+    "longDescription": "AI-powered code review in Codex, powered by CodeRabbit.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Review my current changes and provide feedback"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  }
+}

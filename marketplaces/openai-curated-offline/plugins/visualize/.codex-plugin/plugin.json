@@ -1,0 +1,40 @@
+{
+  "name": "visualize",
+  "version": "1.0.11",
+  "description": "Create interactive charts, maps, diagrams, simulations, 3D models, data explorers, and UI previews directly in Codex.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "visualize"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Visualize",
+    "shortDescription": "Turn ideas and data into interactive visuals",
+    "longDescription": "Create interactive charts, maps, diagrams, simulations, 3D models, data explorers, and UI previews directly in Codex.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Turn this dataset into an interactive explorer with filters and selectable details",
+      "Show how a spinning gyroscope works in an adjustable 3D simulation",
+      "Visualize this database schema as an interactive relationship graph"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/visualize.svg",
+    "logo": "./assets/visualize.svg",
+    "screenshots": []
+  }
+}

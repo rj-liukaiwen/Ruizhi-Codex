@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "ruijie-km": {
+      "command": "python3",
+      "args": [
+        "./scripts/ruijie_km_mcp.py"
+      ],
+      "cwd": ".",
+      "env": {
+        "RUIJIE_KM_ENV": "prod",
+        "RUIJIE_KM_INSECURE_TLS": "1"
+      }
+    }
+  }
+}

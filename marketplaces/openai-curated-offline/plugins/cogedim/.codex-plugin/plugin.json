@@ -1,0 +1,38 @@
+{
+  "name": "cogedim",
+  "version": "1.0.3",
+  "description": "Cogedim is one of France's leading real estate developers.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "cogedim"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Cogedim",
+    "shortDescription": "Cogedim is one of France's leading real estate developers.",
+    "longDescription": "Cogedim is one of France's leading real estate developers.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Find relevant Cogedim properties for this brief"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

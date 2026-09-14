@@ -1,0 +1,44 @@
+{
+  "name": "ruijie-km",
+  "version": "0.2.0",
+  "description": "查询和读取锐捷 KM 知识库文档。",
+  "author": {
+    "name": "Ruijie",
+    "email": "ai@ruijie.com.cn",
+    "url": "https://km.ruijie.com.cn/"
+  },
+  "homepage": "https://km.ruijie.com.cn/",
+  "repository": "https://km.ruijie.com.cn/",
+  "license": "Proprietary",
+  "keywords": [
+    "ruijie",
+    "km",
+    "knowledge",
+    "documents"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "锐捷知识库",
+    "shortDescription": "查询 KM 文档、分类、标签和资料详情",
+    "longDescription": "面向锐捷 KM 知识库的本地插件。优先提供自然搜索入口，可查找最新彩页、参数规格、产品资料、分类资料和文档详情；同时保留底层列表、详情、分类、标签与下载记录接口，便于精确追溯。",
+    "developerName": "Ruijie",
+    "category": "锐捷",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://km.ruijie.com.cn/",
+    "privacyPolicyURL": "https://km.ruijie.com.cn/",
+    "termsOfServiceURL": "https://km.ruijie.com.cn/",
+    "defaultPrompt": [
+      "查一下 RG-S6921 最新产品彩页和附件链接。",
+      "帮我找交换机相关的最新参数规格资料。",
+      "列出 KM 顶层分类，并继续展开市场资料库。"
+    ],
+    "brandColor": "#D71920",
+    "composerIcon": "./assets/ruijie-km.svg",
+    "logo": "./assets/ruijie-km.svg",
+    "screenshots": []
+  }
+}

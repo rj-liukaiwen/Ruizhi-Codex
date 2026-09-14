@@ -1,0 +1,40 @@
+{
+  "name": "zoho",
+  "version": "1.0.3",
+  "description": "Manage Zoho CRM sales workflows",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "zoho"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Zoho",
+    "shortDescription": "Manage Zoho CRM sales workflows",
+    "longDescription": "Manage Zoho CRM sales workflows",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Search Zoho CRM for open deals closing this quarter and summarize the highest-risk opportunities.",
+      "Find Zoho CRM contacts at an account and summarize recent activities.",
+      "Pull Zoho CRM organization settings and users needed to audit access."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

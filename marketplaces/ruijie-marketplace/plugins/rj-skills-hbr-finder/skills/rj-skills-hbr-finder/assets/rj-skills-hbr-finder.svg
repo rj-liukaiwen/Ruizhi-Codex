@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="HBR">
+  <rect width="128" height="128" rx="24" fill="#FFFFFF"/>
+  <rect x="10" y="10" width="108" height="108" rx="18" fill="none" stroke="#A51E22" stroke-width="4"/>
+  <text x="64" y="72" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="44" font-weight="700" letter-spacing="1.5" fill="#A51E22">HBR</text>
+  <path d="M28 88h72" fill="none" stroke="#A51E22" stroke-width="4" stroke-linecap="round"/>
+</svg>

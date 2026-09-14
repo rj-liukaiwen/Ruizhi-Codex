@@ -1,0 +1,40 @@
+{
+  "name": "similarweb",
+  "version": "1.0.2",
+  "description": "Research web and app market intelligence",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "similarweb"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Similarweb",
+    "shortDescription": "Research web and app market intelligence",
+    "longDescription": "Research web and app market intelligence",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Analyze traffic trends for example.com versus its top competitors over the last six months.",
+      "Find the top acquisition channels and referring sites for example.com and summarize growth opportunities.",
+      "Compare audience geography and search keywords for example.com and a competitor."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "lseg",
+  "version": "1.0.2",
+  "description": "Financial market data and analytics",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "lseg"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "LSEG",
+    "shortDescription": "Financial market data and analytics",
+    "longDescription": "Financial market data and analytics",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Pull recent LSEG market data and company financials for a ticker and summarize valuation drivers.",
+      "Find the latest news, filings, and events for a company in LSEG and highlight material changes.",
+      "Compare key metrics for a company against its peer set using LSEG data."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

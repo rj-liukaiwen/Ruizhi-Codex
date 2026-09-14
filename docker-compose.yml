@@ -1,0 +1,9 @@
+services:
+  ruizhi-website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: "${RUIZHI_WEBSITE_IMAGE:-hocho5i996/rj-codex-website:0.1.13}"
+    ports:
+      - "${RUIZHI_WEBSITE_PORT:-8080}:80"
+    restart: unless-stopped

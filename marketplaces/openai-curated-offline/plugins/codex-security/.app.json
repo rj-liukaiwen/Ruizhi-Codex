@@ -1,0 +1,13 @@
+{
+  "apps": {
+    "codex_security": {
+      "id": "asdk_app_69a089a326dc8191b32a3f2553f5be2c"
+    },
+    "codex_security_2": {
+      "id": "connector_76869538009648d5b282a4bb21c3d157"
+    },
+    "codex_security_3": {
+      "id": "connector_692de805e3ec8191834719067174a384"
+    }
+  }
+}

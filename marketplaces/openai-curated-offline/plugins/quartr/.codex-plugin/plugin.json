@@ -1,0 +1,40 @@
+{
+  "name": "quartr",
+  "version": "1.0.3",
+  "description": "Public company IR data and earnings research",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "quartr"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Quartr",
+    "shortDescription": "Public company IR data and earnings research",
+    "longDescription": "Public company IR data and earnings research",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Find the latest relevant Quartr materials for a company.",
+      "Compare recurring analyst question themes from the last two earnings calls for a company.",
+      "Pull recent earnings transcripts and filings for a company and summarize forward-looking statements."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

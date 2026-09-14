@@ -1,0 +1,40 @@
+{
+  "name": "factset",
+  "version": "1.0.2",
+  "description": "Connect financial data, analytics, and workflows",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "factset"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "FactSet",
+    "shortDescription": "Connect financial data, analytics, and workflows",
+    "longDescription": "Connect financial data, analytics, and workflows",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Pull FactSet consensus estimates and recent price performance for a ticker.",
+      "Compare margins, revenue growth, and valuation multiples across this peer set in FactSet.",
+      "Find recent broker research headlines for a company in FactSet and summarize sentiment."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

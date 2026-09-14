@@ -1,0 +1,69 @@
+name: Windows build and release
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: '版本号，例如 0.3.1442；已有版本不覆盖'
+        required: true
+        default: '0.3.1442'
+        type: string
+      publish:
+        description: '成功后公开发布 Release（否则仅上传 Artifacts）'
+        type: boolean
+        default: true
+permissions:
+  contents: read
+concurrency:
+  group: windows-release-${{ inputs.version }}
+  cancel-in-progress: false
+jobs:
+  windows:
+    runs-on: windows-2025
+    timeout-minutes: 90
+    permissions:
+      contents: write
+    defaults:
+      run:
+        shell: pwsh
+    env:
+      CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+      RUIZHI_BUILD_CODEX: '0'
+      RELEASE_VERSION: ${{ inputs.version }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: false
+      - name: Set release version and reject overwrites
+        run: node scripts/github-windows-release.mjs prepare
+      - name: Restore and verify pinned desktop snapshot
+        run: node scripts/restore-windows-snapshot.mjs
+      - run: npm ci --no-audit --no-fund
+      - name: Check build regressions
+        run: npm test
+      - name: Build Windows installer and ZIP
+        run: npm run build:windows
+      - name: Verify unsigned installer and artifacts
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $v = $env:RELEASE_VERSION.TrimStart('v')
+          $signature = Get-AuthenticodeSignature -LiteralPath "dist/installer/Ruizhi-Setup-$v.exe"
+          if ($signature.Status -ne 'NotSigned') { throw "Unexpected signing status: $($signature.Status)" }
+          node scripts/github-windows-release.mjs verify
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Ruizhi-Codex-${{ inputs.version }}-windows-x64
+          path: dist/github-release/*
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 14
+      - name: Publish complete GitHub Release
+        if: inputs.publish
+        run: node scripts/github-windows-release.mjs publish

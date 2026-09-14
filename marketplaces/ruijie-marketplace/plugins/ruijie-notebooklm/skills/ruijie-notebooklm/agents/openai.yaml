@@ -1,0 +1,10 @@
+interface:
+  display_name: "锐捷-读书助手"
+  short_description: "v2026.05.07.2；上传 PDF 内容到 NotebookLM 并通过交互选择生成读书总结和图表"
+  icon_small: "./assets/ruijie-notebooklm.svg"
+  icon_large: "./assets/ruijie-notebooklm.svg"
+  brand_color: "#7A4E2D"
+  default_prompt: "使用 $锐捷-读书助手 上传一本 PDF 书籍，并在上传后询问我要快速读书、书籍总结还是生成图表。"
+
+policy:
+  allow_implicit_invocation: true

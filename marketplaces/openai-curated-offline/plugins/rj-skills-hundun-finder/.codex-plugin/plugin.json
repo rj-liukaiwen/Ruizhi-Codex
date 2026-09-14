@@ -1,0 +1,38 @@
+{
+  "name": "rj-skills-hundun-finder",
+  "version": "2026.05.08.1",
+  "description": "混沌大学课程、文章和集合视频检索插件。",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "rj-skills-hundun-finder"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "混沌大学检索",
+    "shortDescription": "检索混沌大学课程和文章",
+    "longDescription": "混沌大学课程、文章和集合视频检索插件。",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "检索混沌大学战略课程",
+      "查找混沌大学组织管理文章"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/rj-skills-hundun-finder.png",
+    "logo": "./assets/rj-skills-hundun-finder.png",
+    "screenshots": []
+  }
+}

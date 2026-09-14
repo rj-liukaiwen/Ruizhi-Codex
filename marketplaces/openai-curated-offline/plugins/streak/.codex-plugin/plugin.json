@@ -1,0 +1,38 @@
+{
+  "name": "streak",
+  "version": "1.0.2",
+  "description": "Streak is a CRM built directly into Gmail, so you can track deals, contacts, and workflows from your inbox.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "streak"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Streak",
+    "shortDescription": "Streak is a CRM built directly into Gmail, so you can track deals, contacts, and workflows from your inbox.",
+    "longDescription": "Streak is a CRM built directly into Gmail, so you can track deals, contacts, and workflows from your inbox.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Show recent deals in Streak"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/app-icon.png",
+    "logo": "./assets/app-icon.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

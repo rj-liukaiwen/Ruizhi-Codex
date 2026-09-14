@@ -1,0 +1,38 @@
+{
+  "name": "third-bridge",
+  "version": "1.0.3",
+  "description": "Seamlessly incorporate critical context and trusted insights from industry experts as part of your financia...",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "third-bridge"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Third Bridge",
+    "shortDescription": "Seamlessly incorporate critical context and trusted insights from industry experts as part of your financia...",
+    "longDescription": "Seamlessly incorporate critical context and trusted insights from industry experts as part of your financia...",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Competitive analysis based on Third Bridge expert network"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

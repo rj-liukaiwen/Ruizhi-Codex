@@ -1,0 +1,40 @@
+{
+  "name": "meticulate",
+  "version": "1.0.2",
+  "description": "Research companies and similar targets",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "meticulate"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Meticulate",
+    "shortDescription": "Research companies and similar targets",
+    "longDescription": "Research companies and similar targets",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Search Meticulate for companies matching this ICP and summarize the strongest fits.",
+      "Look up a company by SFDC account ID and fetch its firmographic summary.",
+      "Find companies similar to this seed company and explain why they are good lookalikes."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

@@ -1,0 +1,41 @@
+{
+  "name": "figma",
+  "version": "2.0.13",
+  "description": "Figma workflows for design implementation, Code Connect templates, and design system rule generation.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "figma"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Figma",
+    "shortDescription": "Design-to-code workflows powered by the Figma integration",
+    "longDescription": "Figma workflows for design implementation, Code Connect templates, and design system rule generation.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Inspect a Figma design and implement it in code",
+      "Create Code Connect templates for my components",
+      "Build or update a screen in Figma"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo-padded.png",
+    "logo": "./assets/logo-padded.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

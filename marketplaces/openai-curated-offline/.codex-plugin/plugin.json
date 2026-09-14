@@ -1,0 +1,10 @@
+{
+  "name": "openai-curated",
+  "version": "2026.07.24.1",
+  "description": "Offline snapshot of OpenAI curated connector and skill plugins generated from the cached remote plugin catalog.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "license": "Proprietary"
+}

@@ -1,0 +1,38 @@
+{
+  "name": "policynote",
+  "version": "1.0.3",
+  "description": "Use the PolicyNote app to access structured policy and regulatory intelligence from around the world.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "policynote"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "PolicyNote",
+    "shortDescription": "Use the PolicyNote app to access structured policy and regulatory intelligence from around the world.",
+    "longDescription": "Use the PolicyNote app to access structured policy and regulatory intelligence from around the world.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Summarize the relevant policy context from PolicyNote"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

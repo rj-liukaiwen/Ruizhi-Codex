@@ -1,0 +1,17 @@
+{
+  "source": "OpenAI Codex Desktop",
+  "packageVersion": null,
+  "importedAt": "2026-07-17T08:41:26.031Z",
+  "sourceAppRoot": "C:\\Program\\Codex\\ChatGPT",
+  "targetAppRoot": "vendor/codex-desktop/windows/current/app",
+  "files": {
+    "resources/app.asar": {
+      "size": 210487110,
+      "sha256": "f07d101022b6e3f1dfcb96ec6798c7d2ab567b0f905816f28f116f7326981012"
+    },
+    "ChatGPT.exe": {
+      "size": 4132352,
+      "sha256": "6a364441fe2a6fdf1029bdfbb6f3eac7cfd7dfcbfc4ca809415ce87b21599570"
+    }
+  }
+}

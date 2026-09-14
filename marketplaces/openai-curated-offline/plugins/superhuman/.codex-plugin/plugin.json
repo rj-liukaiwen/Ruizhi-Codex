@@ -1,0 +1,41 @@
+{
+  "name": "superhuman",
+  "version": "0.1.2",
+  "description": "Connect Codex to the official Superhuman Mail MCP server for email and calendar workflows.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "superhuman"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Superhuman Mail",
+    "shortDescription": "The most productive email app ever, for Gmail & Outlook",
+    "longDescription": "Connect Codex to the official Superhuman Mail MCP server for email and calendar workflows.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "@Superhuman Mail flag what needs attention from the last 24 hours",
+      "@Superhuman Mail forward today's invoices to finance@acme.co",
+      "@Superhuman Mail summarize responses to the Founders Dinner and who hasn't opened it"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/superhuman-mail.svg",
+    "logo": "./assets/superhuman-mail.svg",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

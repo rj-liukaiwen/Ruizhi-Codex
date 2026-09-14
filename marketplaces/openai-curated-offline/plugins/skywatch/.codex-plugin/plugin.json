@@ -1,0 +1,38 @@
+{
+  "name": "skywatch",
+  "version": "1.0.3",
+  "description": "Search and explore satellite imagery from top providers including Vantor, Planet, Airbus, and more, all in...",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "skywatch"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "SkyWatch",
+    "shortDescription": "Search and explore satellite imagery from top providers including Vantor, Planet, Airbus, and more, all in...",
+    "longDescription": "Search and explore satellite imagery from top providers including Vantor, Planet, Airbus, and more, all in...",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Find recent satellite images of the Golden Gate Bridge"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

@@ -1,0 +1,41 @@
+{
+  "name": "base44",
+  "version": "1.0.3-beta.1",
+  "description": "Build and deploy Base44 full-stack apps with CLI project management and JavaScript/TypeScript SDK development skills",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "base44"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Base44",
+    "shortDescription": "Build and deploy Base44 full-stack apps from Codex",
+    "longDescription": "Build and deploy Base44 full-stack apps with CLI project management and JavaScript/TypeScript SDK development skills",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Create a new Base44 app and deploy it.",
+      "Build a feature in my existing Base44 app.",
+      "Debug errors from my Base44 backend functions."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo-padded.png",
+    "logo": "./assets/logo-padded.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

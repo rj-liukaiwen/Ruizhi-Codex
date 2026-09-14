@@ -1,0 +1,40 @@
+{
+  "name": "hg-insights",
+  "version": "1.0.3",
+  "description": "Prospect data and revenue intelligence",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "hg-insights"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "HG Insights",
+    "shortDescription": "Prospect data and revenue intelligence",
+    "longDescription": "Prospect data and revenue intelligence",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Find high-fit accounts in HG Insights showing buyer intent and summarize the best sales plays.",
+      "Use HG Insights to size this market and identify priority segments for our GTM plan.",
+      "Enrich these target accounts with HG Insights technographics, spend data, and buying signals."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

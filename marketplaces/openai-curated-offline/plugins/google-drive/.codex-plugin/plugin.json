@@ -1,0 +1,38 @@
+{
+  "name": "google-drive",
+  "version": "0.1.7",
+  "description": "Use Google Drive as the single entrypoint for Drive, Docs, Sheets, and Slides work.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "google-drive"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Google Drive",
+    "shortDescription": "Work across Drive, Docs, Sheets, and Slides",
+    "longDescription": "Use Google Drive as the single entrypoint for Drive, Docs, Sheets, and Slides work.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Find the right Drive file, then summarize a Doc, update a Sheet, or edit a Slides deck"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

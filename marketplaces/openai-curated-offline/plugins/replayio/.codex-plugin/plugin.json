@@ -1,0 +1,40 @@
+{
+  "name": "replayio",
+  "version": "0.1.0",
+  "description": "Record browser sessions with the Replay Browser through the host agent browser, analyze recordings through Replay MCP tools or Replay QA, and upload pending recordings when the turn ends.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "replayio"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Replay.io",
+    "shortDescription": "Record browser sessions and inspect Replay recordings or Replay QA results",
+    "longDescription": "Record browser sessions with the Replay Browser through the host agent browser, analyze recordings through Replay MCP tools or Replay QA, and upload pending recordings when the turn ends.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Record an agent browser session against this local app and analyze the resulting recording",
+      "Create a Replay QA project for this Replay recording and report the bugs"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/replayio.svg",
+    "logo": "./assets/replayio.svg",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

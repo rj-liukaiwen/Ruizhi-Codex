@@ -1,0 +1,39 @@
+{
+  "name": "render",
+  "version": "0.1.3",
+  "description": "Skills for deploying, debugging, monitoring, and migrating apps on Render.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "render"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Render",
+    "shortDescription": "Deploy, debug, monitor, and migrate apps on Render.",
+    "longDescription": "Skills for deploying, debugging, monitoring, and migrating apps on Render.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "How are my Render services doing?",
+      "Help me validate my render.yaml for Render.",
+      "Debug a failed Render deployment."
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.svg",
+    "logo": "./assets/logo.svg",
+    "screenshots": []
+  }
+}

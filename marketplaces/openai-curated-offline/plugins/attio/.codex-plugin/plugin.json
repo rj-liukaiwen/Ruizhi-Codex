@@ -1,0 +1,38 @@
+{
+  "name": "attio",
+  "version": "1.0.3",
+  "description": "Attio connects Codex directly to your CRM workspace, letting you manage customer relationships through na...",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "attio"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Attio",
+    "shortDescription": "Attio connects Codex directly to your CRM workspace, letting you manage customer relationships through na...",
+    "longDescription": "Attio connects Codex directly to your CRM workspace, letting you manage customer relationships through na...",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Find the latest notes and next steps in Attio"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

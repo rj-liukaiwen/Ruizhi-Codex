@@ -1,0 +1,39 @@
+{
+  "name": "ruijie-km",
+  "version": "0.2.0",
+  "description": "查询和读取锐捷 KM 知识库文档。",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "ruijie-km"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "锐捷知识库",
+    "shortDescription": "查询 KM 文档、分类、标签和资料详情",
+    "longDescription": "查询和读取锐捷 KM 知识库文档。",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "查一下 RG-S6921 最新产品彩页和附件链接。",
+      "帮我找交换机相关的最新参数规格资料。",
+      "列出 KM 顶层分类，并继续展开市场资料库。"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/ruijie-km.svg",
+    "logo": "./assets/ruijie-km.svg",
+    "screenshots": []
+  }
+}

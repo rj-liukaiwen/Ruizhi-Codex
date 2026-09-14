@@ -1,0 +1,38 @@
+{
+  "name": "conductor",
+  "version": "1.0.3",
+  "description": "The Conductor MCP server retrieves proprietary performance metrics regarding a brand's visibility, sentimen...",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "conductor"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Conductor",
+    "shortDescription": "The Conductor MCP server retrieves proprietary performance metrics regarding a brand's visibility, sentimen...",
+    "longDescription": "The Conductor MCP server retrieves proprietary performance metrics regarding a brand's visibility, sentimen...",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Who are top competitors for “wireless earbuds”"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

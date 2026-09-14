@@ -1,0 +1,38 @@
+{
+  "name": "digitalocean",
+  "version": "0.2.2",
+  "description": "Provision a DigitalOcean droplet as a remote Codex workspace.",
+  "author": {
+    "name": "OpenAI",
+    "url": "https://openai.com/"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://openai.com/",
+  "license": "Proprietary",
+  "keywords": [
+    "digitalocean"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "DigitalOcean",
+    "shortDescription": "Provision a droplet as a Codex workspace",
+    "longDescription": "Provision a DigitalOcean droplet as a remote Codex workspace.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/row-privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+    "defaultPrompt": [
+      "Provision a DigitalOcean droplet for Codex"
+    ],
+    "brandColor": "#10A37F",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "apps": "./.app.json"
+}

@@ -1,0 +1,41 @@
+{
+  "name": "ruijie-seedance-prompt",
+  "version": "2026.05.08.1",
+  "description": "Seedance 2.0 视频提示词助手插件。",
+  "author": {
+    "name": "Ruijie",
+    "url": "https://uniapi.ruijie.com.cn/"
+  },
+  "homepage": "https://uniapi.ruijie.com.cn/",
+  "repository": "https://uniapi.ruijie.com.cn/",
+  "license": "Proprietary",
+  "keywords": [
+    "ruijie",
+    "seedance",
+    "video",
+    "prompt"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Seedance 提示词助手",
+    "shortDescription": "为 Seedance 2.0 生成可控视频提示词",
+    "longDescription": "根据文本、图片、视频或音频参考，设计 Seedance 2.0 / Seedance 2.0 Fast 的高可控英文视频生成提示词。",
+    "developerName": "Ruijie",
+    "category": "锐捷",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://uniapi.ruijie.com.cn/",
+    "privacyPolicyURL": "https://uniapi.ruijie.com.cn/",
+    "termsOfServiceURL": "https://uniapi.ruijie.com.cn/",
+    "defaultPrompt": [
+      "用 Seedance 提示词助手写一个 10 秒产品广告提示词",
+      "把这个想法整理成 Seedance 2.0 视频生成 prompt"
+    ],
+    "brandColor": "#8B4ED8",
+    "composerIcon": "./assets/ruijie-seedance-prompt.png",
+    "logo": "./assets/ruijie-seedance-prompt.png",
+    "screenshots": []
+  }
+}

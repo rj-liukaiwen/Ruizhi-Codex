@@ -1,0 +1,22 @@
+{
+  "name": "ruizhi-desktop-builder",
+  "version": "0.3.1442",
+  "private": true,
+  "description": "Windows packaging workflow for the owner-provided Ruizhi Codex snapshot",
+  "type": "module",
+  "scripts": {
+    "build:windows": "node scripts/build-windows.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "import:codex-windows-source": "node scripts/import-codex-windows-source.mjs"
+  },
+  "dependencies": {
+    "@electron/fuses": "^2.1.1",
+    "asar": "^3.2.0",
+    "electron-updater": "^6.8.3",
+    "fs-extra": "^11.3.2"
+  },
+  "devDependencies": {
+    "electron-builder": "^26.8.1",
+    "rcedit": "^5.0.2"
+  }
+}
