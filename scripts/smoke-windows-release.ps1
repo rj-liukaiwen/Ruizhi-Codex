@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Stop'
 if ($env:GITHUB_ACTIONS -ne 'true' -or $env:RUNNER_ENVIRONMENT -ne 'github-hosted') { throw 'Startup check is restricted to a disposable GitHub-hosted runner' }
-$config = Get-Content -LiteralPath 'config/rj-codex.json' -Raw | ConvertFrom-Json
+$config = Get-Content -LiteralPath 'config/rj-codex.json' -Raw | ConvertFrom-Json -AsHashtable
 $fixture = Join-Path $env:RUNNER_TEMP ('ruizhi-startup-' + [guid]::NewGuid().ToString('N'))
 New-Item -ItemType Directory -Path $fixture | Out-Null
 $archive = "dist/github-release/ruizhi-windows-$($config.version).zip"
@@ -15,7 +15,7 @@ $env:CODEX_ELECTRON_USER_DATA_PATH = Join-Path $fixture 'profile'
 $listener = [Net.Sockets.TcpListener]::new([Net.IPAddress]::Loopback, 0)
 $listener.Start(); $port = $listener.LocalEndpoint.Port; $listener.Stop()
 try {
-  $process = Start-Process -FilePath $exe -ArgumentList @("--remote-debugging-port=$port", '--no-first-run') -WindowStyle Hidden -PassThru -RedirectStandardOutput (Join-Path $fixture 'stdout.log') -RedirectStandardError (Join-Path $fixture 'stderr.log')
+  $process = Start-Process -FilePath $exe -ArgumentList @("--remote-debugging-port=$port", "--user-data-dir=`"$($env:CODEX_ELECTRON_USER_DATA_PATH)`"", '--no-first-run') -WindowStyle Hidden -PassThru -RedirectStandardOutput (Join-Path $fixture 'stdout.log') -RedirectStandardError (Join-Path $fixture 'stderr.log')
   $ready = $false
   for ($i=0; $i -lt 45; $i++) {
     Start-Sleep -Seconds 1

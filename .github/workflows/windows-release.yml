@@ -60,8 +60,6 @@ jobs:
           if ($signature.Status -ne 'NotSigned') { throw "Unexpected signing status: $($signature.Status)" }
           node scripts/github-windows-release.mjs verify
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-      - name: Check application startup in the disposable runner
-        run: ./scripts/smoke-windows-release.ps1
       - uses: actions/upload-artifact@v4
         with:
           name: Ruizhi-Codex-${{ inputs.version }}-windows-x64
@@ -69,6 +67,8 @@ jobs:
           if-no-files-found: error
           compression-level: 0
           retention-days: 14
+      - name: Check application startup in the disposable runner
+        run: ./scripts/smoke-windows-release.ps1
       - name: Publish complete GitHub Release
         if: inputs.publish
         run: node scripts/github-windows-release.mjs publish
