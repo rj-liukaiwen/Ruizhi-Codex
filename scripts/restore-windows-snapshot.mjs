@@ -16,7 +16,7 @@ if (!existsSync(archive)) {
 const hash = createHash('sha256'); for await (const part of createReadStream(archive)) hash.update(part);
 assert.equal(hash.digest('hex'), expected, 'Source archive checksum differs');
 // Restore only the vendor tree; never overwrite the checked-out workflow/code.
-execFileSync('tar.exe', ['-xf', archive, 'vendor/codex-desktop/windows/current/app'], { stdio: 'inherit', windowsHide: true });
+execFileSync('tar.exe', ['-xf', archive, 'vendor/codex-desktop/windows/current/app', 'resources/windows/prerequisites/vc_redist.x64.exe'], { stdio: 'inherit', windowsHide: true });
 const manifest = JSON.parse(readFileSync('vendor/codex-desktop/windows/current/source-manifest.json'));
 for (const [file, spec] of Object.entries(manifest.files)) {
   const bytes = readFileSync(`vendor/codex-desktop/windows/current/app/${file}`);
