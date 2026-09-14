@@ -1,5 +1,13 @@
 # 锐捷Codex
 
+本仓库从用户提供的 `0.3.1442-0910-d5fbc05` 快照建立，目前仅启用 Windows 构建。
+进入 **Actions → Windows build and release → Run workflow**，填写版本号即可构建安装程序与 ZIP；勾选 publish 会发布到本仓库 Releases。
+详见 [GitHub Windows 发布说明](docs/GitHub-Windows发布.md)。下文为原工程说明，部分功能描述和路径早于当前快照。
+
+当前源码自带历史测试并未全部通过：初次检查为 136 通过、28 失败，包含缺失的旧覆盖层路径及旧配置断言。
+工作流保留完整测试结果，同时将 Windows 打包回归、固定资源校验、生成物摘要和真实程序启动作为发布门禁。
+公开仓库不等于所有第三方组件均采用同一开源许可；本项目不是 OpenAI 官方发行版。
+
 这是一个 Codex Desktop 初版魔改构建工程。它不直接改系统安装目录，而是复制已安装的 Codex Desktop，解包 `app.asar` 后打补丁，再输出一个独立的桌面应用目录。
 
 ## 当前改动
