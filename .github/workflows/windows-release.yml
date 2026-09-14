@@ -45,8 +45,11 @@ jobs:
       - name: Restore and verify pinned desktop snapshot
         run: node scripts/restore-windows-snapshot.mjs
       - run: npm ci --no-audit --no-fund
-      - name: Check build regressions
-        run: npm test
+      - name: Record inherited source test results
+        continue-on-error: true
+        run: node --test --test-reporter=tap tests/*.test.mjs > inherited-tests.tap
+      - name: Check Windows packaging regressions
+        run: node --test tests/ruizhi-browser-runtime-hash.test.mjs tests/ruizhi-windows-installer-process-isolation.test.mjs
       - name: Build Windows installer and ZIP
         run: npm run build:windows
       - name: Verify unsigned installer and artifacts
@@ -57,6 +60,8 @@ jobs:
           if ($signature.Status -ne 'NotSigned') { throw "Unexpected signing status: $($signature.Status)" }
           node scripts/github-windows-release.mjs verify
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Check application startup in the disposable runner
+        run: ./scripts/smoke-windows-release.ps1
       - uses: actions/upload-artifact@v4
         with:
           name: Ruizhi-Codex-${{ inputs.version }}-windows-x64
@@ -67,3 +72,11 @@ jobs:
       - name: Publish complete GitHub Release
         if: inputs.publish
         run: node scripts/github-windows-release.mjs publish
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: Windows-build-diagnostics-${{ github.run_id }}
+          path: |
+            inherited-tests.tap
+            dist/startup-report.json
+          if-no-files-found: ignore
